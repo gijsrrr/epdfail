@@ -630,6 +630,65 @@ footer {
   border-bottom: none;
 }
 
+
+/* ── SOURCES ── */
+.src-body {
+  padding: 0;
+}
+
+.src-group-label {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--faint);
+  padding: 9px 18px 6px;
+  background: var(--surface2);
+  border-bottom: 1px solid var(--border);
+}
+
+.src-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.src-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 9px 18px;
+  border-bottom: 1px solid var(--border);
+  text-decoration: none;
+  transition: background .1s;
+}
+
+.src-item:last-child {
+  border-bottom: none;
+}
+
+.src-item:hover {
+  background: var(--surface2);
+}
+
+.src-name {
+  font-size: 13px;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.src-url {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--muted);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.src-item:hover .src-name {
+  color: var(--red);
+}
+
 </style>
 </head>
 <body>
@@ -998,6 +1057,106 @@ footer {
     <div style="flex:1">
       <div class="callout-label" style="color:var(--amber)">Disclaimer &mdash; 18 Apr 2026</div>
       <div class="callout-text">This page aggregates <strong>publicly available information</strong> from institution websites, official press releases, and media reporting. It does not make claims beyond what sources state. Named GP practices are plotted at geocoded addresses with a ~2,300 patient radius (Dutch average). GP practices are plotted only where a breach is confirmed or suspected. Population figures are estimates. This is an independent public-awareness project — not affiliated with ChipSoft, Z-CERT, or any healthcare institution. For official information, consult <strong>informatie.chipsoft.com</strong> and your own healthcare provider.</div>
+    </div>
+  </div>
+
+
+  <!-- ── SOURCES ── -->
+  <div class="card" style="margin-top:1.25rem">
+    <div class="card-head">
+      <span class="card-head-title">Bronnen</span>
+      <span class="card-head-meta">alle publiek beschikbaar — laatst gecontroleerd 18 apr 2026</span>
+    </div>
+    <div class="src-body">
+
+      <div class="src-group-label">Officieel</div>
+      <div class="src-list">
+        <a class="src-item" href="https://informatie.chipsoft.com/chip-soft-informatiepagina-ransomware-incident/" target="_blank" rel="noopener">
+          <span class="src-name">ChipSoft informatiepagina ransomware-incident</span>
+          <span class="src-url">informatie.chipsoft.com</span>
+        </a>
+        <a class="src-item" href="https://informatie.chipsoft.com/chip-soft-informatiepagina-ransomware-incident/veelgestelde-vragen" target="_blank" rel="noopener">
+          <span class="src-name">ChipSoft FAQ — veelgestelde vragen</span>
+          <span class="src-url">informatie.chipsoft.com/…/veelgestelde-vragen</span>
+        </a>
+        <a class="src-item" href="https://dfzs.nl/nieuws/zorg-gaat-door-na-data-incident-bij-chipsoft/" target="_blank" rel="noopener">
+          <span class="src-name">De Forensische Zorgspecialisten — zorg gaat door na data-incident</span>
+          <span class="src-url">dfzs.nl</span>
+        </a>
+      </div>
+
+      <div class="src-group-label">Media</div>
+      <div class="src-list">
+        <a class="src-item" href="https://nos.nl/artikel/2610742-toch-patientgegevens-buitgemaakt-bij-hacken-van-softwarebedrijf-chipsoft" target="_blank" rel="noopener">
+          <span class="src-name">NOS — Toch patiëntgegevens buitgemaakt bij hacken ChipSoft</span>
+          <span class="src-url">nos.nl/artikel/2610742</span>
+        </a>
+        <a class="src-item" href="https://nos.nl/artikel/2610491-lekken-van-ziekenhuisdata-toch-niet-uitgesloten-bij-chipsoft-hack" target="_blank" rel="noopener">
+          <span class="src-name">NOS — Lekken van ziekenhuisdata toch niet uitgesloten</span>
+          <span class="src-url">nos.nl/artikel/2610491</span>
+        </a>
+        <a class="src-item" href="https://nos.nl/artikel/2610854-zorgorganisaties-melden-diefstal-patientgegevens-na-chipsoft-hack" target="_blank" rel="noopener">
+          <span class="src-name">NOS — Zorgorganisaties melden diefstal patiëntgegevens</span>
+          <span class="src-url">nos.nl/artikel/2610854</span>
+        </a>
+        <a class="src-item" href="https://nos.nl/artikel/2609591-huisartsen-getroffen-door-chipsoft-hack-geen-gevolgen-voor-ziekenhuizen" target="_blank" rel="noopener">
+          <span class="src-name">NOS — Huisartsen getroffen, geen gevolgen voor ziekenhuizen</span>
+          <span class="src-url">nos.nl/artikel/2609591</span>
+        </a>
+        <a class="src-item" href="https://www.lhv.nl/nieuws/cyberincident-bij-chipsoft-dit-weten-we-nu/" target="_blank" rel="noopener">
+          <span class="src-name">LHV — Cyberincident bij ChipSoft: dit weten we nu</span>
+          <span class="src-url">lhv.nl</span>
+        </a>
+        <a class="src-item" href="https://www.l1nieuws.nl/nieuws/3145276/noord-limburgse-huisartsen-werken-met-gehackt-systeem-chipsoft-maar-niet-getroffen-door-hack" target="_blank" rel="noopener">
+          <span class="src-name">L1 Nieuws — Noord-Limburgse huisartsen niet getroffen (Cohesie)</span>
+          <span class="src-url">l1nieuws.nl</span>
+        </a>
+        <a class="src-item" href="https://www.skipr.nl/nieuws/chipsoft-getroffen-door-cyberaanval-systemen-voor-ziekenhuizen-en-huisartsen-geraakt/" target="_blank" rel="noopener">
+          <span class="src-name">Skipr — Ransomware-aanval treft EPD-leverancier ChipSoft</span>
+          <span class="src-url">skipr.nl</span>
+        </a>
+      </div>
+
+      <div class="src-group-label">Instelling-statements</div>
+      <div class="src-list">
+        <a class="src-item" href="https://huisartsenpraktijkneulstraat.uwartsonline.nl/cyberaanval/" target="_blank" rel="noopener">
+          <span class="src-name">Huisartsenpraktijken De Dommel (Sint-Oedenrode) — cyberaanval</span>
+          <span class="src-url">huisartsenpraktijkneulstraat.uwartsonline.nl</span>
+        </a>
+        <a class="src-item" href="https://mercuur.praktijkinfo.nl/problemen-patientenportaal-cyberaanval/" target="_blank" rel="noopener">
+          <span class="src-name">Mercuur Huisartsenpraktijk — problemen patiëntenportaal</span>
+          <span class="src-url">mercuur.praktijkinfo.nl</span>
+        </a>
+        <a class="src-item" href="https://www.medischkwartiereindhoven.nl/belangrijke-informatie-over-ransomeware-aanval-uw-gegevens-zijn-ontvreemd/" target="_blank" rel="noopener">
+          <span class="src-name">Medisch Kwartier Eindhoven — gegevens ontvreemd</span>
+          <span class="src-url">medischkwartiereindhoven.nl</span>
+        </a>
+        <a class="src-item" href="https://terramedici.praktijkinfo.nl/" target="_blank" rel="noopener">
+          <span class="src-name">Huisartsenpraktijk Terra Medici — Maarheeze</span>
+          <span class="src-url">terramedici.praktijkinfo.nl</span>
+        </a>
+        <a class="src-item" href="https://de-1elijn.nl/nieuws/belangrijke-informatie-over-ransomware-aanval-uw-gegevens-zijn-hoogstwaarschijnlijk-ontvreemd/" target="_blank" rel="noopener">
+          <span class="src-name">Huisartsenpraktijk De 1e Lijn (Den Hoorn) — gegevens hoogstwaarschijnlijk ontvreemd</span>
+          <span class="src-url">de-1elijn.nl</span>
+        </a>
+        <a class="src-item" href="https://www.mcboschdijk.nl/problemen-portaal-datalek/" target="_blank" rel="noopener">
+          <span class="src-name">Huisarts Boschdijk Eindhoven — problemen portaal / datalek</span>
+          <span class="src-url">mcboschdijk.nl</span>
+        </a>
+        <a class="src-item" href="https://www.hadeurne.nl/" target="_blank" rel="noopener">
+          <span class="src-name">Huisartsenpraktijk Van de Kerkhof (Deurne)</span>
+          <span class="src-url">hadeurne.nl</span>
+        </a>
+        <a class="src-item" href="https://huisartsenpraktijkhartendorp.nl/wp-content/uploads/2026/04/Informatie-data-incident-Chipsoft-Praktijk-Hartendorp.pdf" target="_blank" rel="noopener">
+          <span class="src-name">Praktijk Hartendorp (Schoorl) — patiëntbrief data-incident (PDF)</span>
+          <span class="src-url">huisartsenpraktijkhartendorp.nl</span>
+        </a>
+        <a class="src-item" href="https://cdn.prod.website-files.com/6814cbfb9cf846862013146a/69e0f47e4c035ab1ff3a5817_Cyberaanval%20Chipsoft.pdf" target="_blank" rel="noopener">
+          <span class="src-name">MKA Kennemer &amp; Meer — patiëntbrief cyberaanval ChipSoft (PDF)</span>
+          <span class="src-url">mkakennemerenmeer.nl</span>
+        </a>
+      </div>
+
     </div>
   </div>
 
