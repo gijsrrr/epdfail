@@ -86,14 +86,7 @@ header {
   line-height: 1;
 }
 
-.logo-sub {
-  font-family: var(--mono);
-  font-size: 11px;
-  color: var(--muted);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  margin-top: 3px;
-}
+
 
 .hdivider {
   width: 1px;
@@ -115,53 +108,19 @@ header {
 
 .hincident strong { color: var(--text); font-weight: 500; }
 
-.status-chip {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  background: var(--red-bg);
-  border: 1px solid rgba(196,43,43,0.18);
-  border-radius: 4px;
-  padding: 4px 11px;
-  font-family: var(--mono);
-  font-size: 11px;
-  color: var(--red);
-  letter-spacing: 0.06em;
-  width: fit-content;
-}
 
-.sdot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: var(--red);
-  animation: blink 2s ease-in-out infinite;
-  flex-shrink: 0;
-}
 
-@keyframes blink { 0%,100%{opacity:1} 50%{opacity:.25} }
 
-/* ── NOTICE BAR (replaces ticker) ── */
-.notice-bar {
-  background: var(--red-bg);
-  border-bottom: 1px solid rgba(196,43,43,0.12);
-  padding: 8px 2rem;
-  font-family: var(--mono);
-  font-size: 12px;
-  color: var(--red);
-  letter-spacing: 0.04em;
-  overflow: hidden;
-}
 
-.notice-track {
-  display: inline-flex;
-  gap: 3rem;
-  white-space: nowrap;
-  animation: ts 42s linear infinite;
-}
+ 50%{opacity:.25} }
 
-@keyframes ts { from{transform:translateX(0)} to{transform:translateX(-50%)} }
-.nsep { opacity: .35; margin: 0 4px; }
+
+
+
+
+
+ to{transform:translateX(-50%)} }
+
 
 /* ── MAIN ── */
 main {
@@ -708,7 +667,6 @@ footer {
         <div style="display:flex;align-items:baseline;gap:1px;line-height:1">
           <span class="logo-epd">EPD</span><span class="logo-fail">fail</span>
         </div>
-        <div class="logo-sub">ChipSoft HiX breach &mdash; Netherlands 2026</div>
       </div>
     </div>
 
@@ -719,45 +677,9 @@ footer {
         <strong>Incident CS-2026-0412</strong> &nbsp;&middot;&nbsp;
         Detected 7 Apr 2026 &nbsp;&middot;&nbsp; Last updated 18 Apr 2026
       </div>
-      <div class="status-chip">
-        <span class="sdot"></span>
-        Active &mdash; forensic investigation ongoing
-      </div>
     </div>
   </div>
 
-  <!-- Subdued notice bar instead of flashy ticker -->
-  <div class="notice-bar">
-    <div class="notice-track">
-      <span>TBS / forensic psychiatric data confirmed stolen &#8212; De Waag &amp; Van der Hoeven Kliniek (~6,000 clients)</span>
-      <span class="nsep">/</span>
-      <span>Oogziekenhuis Rotterdam, Rijndam, Heliomare, Maastro confirmed affected</span>
-      <span class="nsep">/</span>
-      <span>8 named GP practices confirmed &#8212; precise locations mapped</span>
-      <span class="nsep">/</span>
-      <span>AP received 66+ breach notifications related to this incident</span>
-      <span class="nsep">/</span>
-      <span>Bravis &amp; Rijnstate confirm not affected (latest statements)</span>
-      <span class="nsep">/</span>
-      <span>BovenIJ Ziekenhuis: no public statement, portal offline 5+ days</span>
-      <span class="nsep">/</span>
-      <span>ChipSoft forensic investigation ongoing &#8212; Z-CERT engaged</span>
-      <span class="nsep">/</span>
-      <span>TBS / forensic psychiatric data confirmed stolen &#8212; De Waag &amp; Van der Hoeven Kliniek (~6,000 clients)</span>
-      <span class="nsep">/</span>
-      <span>Oogziekenhuis Rotterdam, Rijndam, Heliomare, Maastro confirmed affected</span>
-      <span class="nsep">/</span>
-      <span>8 named GP practices confirmed &#8212; precise locations mapped</span>
-      <span class="nsep">/</span>
-      <span>AP received 66+ breach notifications related to this incident</span>
-      <span class="nsep">/</span>
-      <span>Bravis &amp; Rijnstate confirm not affected (latest statements)</span>
-      <span class="nsep">/</span>
-      <span>BovenIJ Ziekenhuis: no public statement, portal offline 5+ days</span>
-      <span class="nsep">/</span>
-      <span>ChipSoft forensic investigation ongoing &#8212; Z-CERT engaged</span>
-      <span class="nsep">/</span>
-    </div>
   </div>
 </header>
 
