@@ -6,7 +6,6 @@
 <title>EPDfail — ChipSoft HiX Breach Impact Map 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-<script defer src="/_vercel/insights/script.js"></script>
 <style>
 :root {
   --bg:       #f5f4f2;
@@ -649,6 +648,39 @@ footer {
   color: var(--red);
 }
 
+
+/* ── CHIPSOFT UPDATE BANNER ── */
+.cs-update {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--green);
+  border-radius: 0 8px 8px 0;
+  padding: 1rem 1.5rem;
+  margin-top: 1.25rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.cs-update-label {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--green);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.cs-update-text {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.cs-update-text strong { color: var(--text); font-weight: 500; }
+.cs-update-text a { color: var(--green); text-decoration: none; }
+.cs-update-text a:hover { text-decoration: underline; }
+
 </style>
 </head>
 <body>
@@ -676,7 +708,7 @@ footer {
     <div class="hmeta">
       <div class="hincident">
         <strong>Incident CS-2026-0412</strong> &nbsp;&middot;&nbsp;
-        Detected 7 Apr 2026 &nbsp;&middot;&nbsp; Last updated 18 Apr 2026
+        Detected 7 Apr 2026 &nbsp;&middot;&nbsp; Last updated 19 Apr 2026
       </div>
     </div>
   </div>
@@ -708,14 +740,24 @@ footer {
       <div class="stat-sub">actual scope likely higher</div>
     </div>
     <div class="stat">
-      <div class="stat-label">Still silent</div>
+      <div class="stat-label">Awaiting communication</div>
       <div class="stat-value amber">1</div>
-      <div class="stat-sub">BovenIJ, portal offline</div>
+      <div class="stat-sub">BovenIJ Ziekenhuis</div>
     </div>
     <div class="stat">
       <div class="stat-label">Confirmed clear</div>
-      <div class="stat-value green">10</div>
+      <div class="stat-value green">11</div>
       <div class="stat-sub">not affected</div>
+    </div>
+  </div>
+
+  <!-- ChipSoft system restore update -->
+  <div class="cs-update">
+    <div style="flex:1">
+      <div class="cs-update-label">&#x2714; ChipSoft update &mdash; 17 Apr 2026</div>
+      <div class="cs-update-text">
+        On 17 April, ChipSoft announced that all disabled systems &mdash; Zorgportaal, Zorgplatform and HiX Mobile &mdash; have been cleared for reactivation. In coordination with external cybersecurity experts and <strong>Z-CERT</strong>, the systems were thoroughly analysed and found safe to restore. Institutions are being informed individually about the rollout. An update on HiX Mobile will follow at a later stage. See also: <a href="https://z-cert.nl/actueel/nieuws/ransomware-incident-chipsoft-nieuwe-informatie-17-april" target="_blank" rel="noopener">Z-CERT statement 17 April</a>.
+      </div>
     </div>
   </div>
 
@@ -782,7 +824,7 @@ footer {
       <div class="map-foot">
         <div class="leg"><svg width="10" height="10"><circle cx="5" cy="5" r="4.5" fill="#c42b2b" fill-opacity=".7"/></svg>Hospital / specialist</div>
         <div class="leg"><svg width="7" height="7"><circle cx="3.5" cy="3.5" r="3.5" fill="#c42b2b"/></svg>GP practice (named)</div>
-        <div class="leg"><svg width="10" height="10"><circle cx="5" cy="5" r="4.5" fill="#c27d00" fill-opacity=".6"/></svg>Silent</div>
+        <div class="leg"><svg width="10" height="10"><circle cx="5" cy="5" r="4.5" fill="#c27d00" fill-opacity=".6"/></svg>Awaiting communication</div>
         <div class="leg"><svg width="10" height="10"><circle cx="5" cy="5" r="4.5" fill="#1a6b35" fill-opacity=".6"/></svg>Not affected</div>
         <span style="margin-left:auto;color:var(--faint);font-size:9px">Radius &prop; &radic;population</span>
       </div>
@@ -971,14 +1013,14 @@ footer {
     </div>
     <div class="ctx-block">
       <div class="ctx-label">Sources &amp; status</div>
-      <div class="ctx-text">Status based on institution websites, NOS, Volkskrant, ANP, LHV, L1 Nieuws, and Skipr as of 18 Apr 2026. GP addresses geocoded via Google Places. BovenIJ remains silent with portal offline. Forensic investigation by ChipSoft and Z-CERT ongoing. Independent awareness project — not an official communication.</div>
+      <div class="ctx-text">Status based on institution websites, NOS, Volkskrant, ANP, LHV, L1 Nieuws, and Skipr as of 19 Apr 2026. GP addresses geocoded via Google Places. BovenIJ remains silent with portal offline. Forensic investigation by ChipSoft and Z-CERT ongoing. Independent awareness project — not an official communication.</div>
     </div>
   </div>
 
   <!-- Accuracy note -->
   <div class="callout amber" style="margin-top:1.25rem">
     <div style="flex:1">
-      <div class="callout-label" style="color:var(--amber)">Disclaimer &mdash; 18 Apr 2026</div>
+      <div class="callout-label" style="color:var(--amber)">Disclaimer &mdash; 19 Apr 2026</div>
       <div class="callout-text">This page aggregates <strong>publicly available information</strong> from institution websites, official press releases, and media reporting. It does not make claims beyond what sources state. Named GP practices are plotted at geocoded addresses with a ~2,300 patient radius (Dutch average). GP practices are plotted only where a breach is confirmed or suspected. Population figures are estimates. This is an independent public-awareness project — not affiliated with ChipSoft, Z-CERT, or any healthcare institution. For official information, consult <strong>informatie.chipsoft.com</strong> and your own healthcare provider.</div>
     </div>
   </div>
@@ -987,12 +1029,12 @@ footer {
   <!-- ── SOURCES ── -->
   <div class="card" style="margin-top:1.25rem">
     <div class="card-head">
-      <span class="card-head-title">Bronnen</span>
-      <span class="card-head-meta">alle publiek beschikbaar — laatst gecontroleerd 18 apr 2026</span>
+      <span class="card-head-title">Sources</span>
+      <span class="card-head-meta">all publicly available — last verified 19 Apr 2026</span>
     </div>
     <div class="src-body">
 
-      <div class="src-group-label">Officieel</div>
+      <div class="src-group-label">Official</div>
       <div class="src-list">
         <a class="src-item" href="https://informatie.chipsoft.com/chip-soft-informatiepagina-ransomware-incident/" target="_blank" rel="noopener">
           <span class="src-name">ChipSoft informatiepagina ransomware-incident</span>
@@ -1003,7 +1045,7 @@ footer {
           <span class="src-url">informatie.chipsoft.com/…/veelgestelde-vragen</span>
         </a>
         <a class="src-item" href="https://dfzs.nl/nieuws/zorg-gaat-door-na-data-incident-bij-chipsoft/" target="_blank" rel="noopener">
-          <span class="src-name">De Forensische Zorgspecialisten — zorg gaat door na data-incident</span>
+          <span class="src-name">De Forensische Zorgspecialisten — care continues after data incident</span>
           <span class="src-url">dfzs.nl</span>
         </a>
       </div>
@@ -1011,47 +1053,47 @@ footer {
       <div class="src-group-label">Media</div>
       <div class="src-list">
         <a class="src-item" href="https://nos.nl/artikel/2610742-toch-patientgegevens-buitgemaakt-bij-hacken-van-softwarebedrijf-chipsoft" target="_blank" rel="noopener">
-          <span class="src-name">NOS — Toch patiëntgegevens buitgemaakt bij hacken ChipSoft</span>
+          <span class="src-name">NOS — Patient data confirmed stolen in ChipSoft hack</span>
           <span class="src-url">nos.nl/artikel/2610742</span>
         </a>
         <a class="src-item" href="https://nos.nl/artikel/2610491-lekken-van-ziekenhuisdata-toch-niet-uitgesloten-bij-chipsoft-hack" target="_blank" rel="noopener">
-          <span class="src-name">NOS — Lekken van ziekenhuisdata toch niet uitgesloten</span>
+          <span class="src-name">NOS — Hospital data leak cannot be ruled out</span>
           <span class="src-url">nos.nl/artikel/2610491</span>
         </a>
         <a class="src-item" href="https://nos.nl/artikel/2610854-zorgorganisaties-melden-diefstal-patientgegevens-na-chipsoft-hack" target="_blank" rel="noopener">
-          <span class="src-name">NOS — Zorgorganisaties melden diefstal patiëntgegevens</span>
+          <span class="src-name">NOS — Healthcare organisations report patient data theft</span>
           <span class="src-url">nos.nl/artikel/2610854</span>
         </a>
         <a class="src-item" href="https://nos.nl/artikel/2609591-huisartsen-getroffen-door-chipsoft-hack-geen-gevolgen-voor-ziekenhuizen" target="_blank" rel="noopener">
-          <span class="src-name">NOS — Huisartsen getroffen, geen gevolgen voor ziekenhuizen</span>
+          <span class="src-name">NOS — GP practices affected, no consequences for hospitals</span>
           <span class="src-url">nos.nl/artikel/2609591</span>
         </a>
         <a class="src-item" href="https://www.lhv.nl/nieuws/cyberincident-bij-chipsoft-dit-weten-we-nu/" target="_blank" rel="noopener">
-          <span class="src-name">LHV — Cyberincident bij ChipSoft: dit weten we nu</span>
+          <span class="src-name">LHV — Cyber incident at ChipSoft: what we know now</span>
           <span class="src-url">lhv.nl</span>
         </a>
         <a class="src-item" href="https://www.l1nieuws.nl/nieuws/3145276/noord-limburgse-huisartsen-werken-met-gehackt-systeem-chipsoft-maar-niet-getroffen-door-hack" target="_blank" rel="noopener">
-          <span class="src-name">L1 Nieuws — Noord-Limburgse huisartsen niet getroffen (Cohesie)</span>
+          <span class="src-name">L1 Nieuws — Noord-Limburg GP practices not affected (Cohesie)</span>
           <span class="src-url">l1nieuws.nl</span>
         </a>
         <a class="src-item" href="https://www.skipr.nl/nieuws/chipsoft-getroffen-door-cyberaanval-systemen-voor-ziekenhuizen-en-huisartsen-geraakt/" target="_blank" rel="noopener">
-          <span class="src-name">Skipr — Ransomware-aanval treft EPD-leverancier ChipSoft</span>
+          <span class="src-name">Skipr — Ransomware attack hits EPR supplier ChipSoft</span>
           <span class="src-url">skipr.nl</span>
         </a>
       </div>
 
-      <div class="src-group-label">Instelling-statements</div>
+      <div class="src-group-label">Institution statements</div>
       <div class="src-list">
         <a class="src-item" href="https://huisartsenpraktijkneulstraat.uwartsonline.nl/cyberaanval/" target="_blank" rel="noopener">
-          <span class="src-name">Huisartsenpraktijken De Dommel (Sint-Oedenrode) — cyberaanval</span>
+          <span class="src-name">Huisartsenpraktijken De Dommel (Sint-Oedenrode) — cyber attack notice</span>
           <span class="src-url">huisartsenpraktijkneulstraat.uwartsonline.nl</span>
         </a>
         <a class="src-item" href="https://mercuur.praktijkinfo.nl/problemen-patientenportaal-cyberaanval/" target="_blank" rel="noopener">
-          <span class="src-name">Mercuur Huisartsenpraktijk — problemen patiëntenportaal</span>
+          <span class="src-name">Mercuur Huisartsenpraktijk — patient portal problems</span>
           <span class="src-url">mercuur.praktijkinfo.nl</span>
         </a>
         <a class="src-item" href="https://www.medischkwartiereindhoven.nl/belangrijke-informatie-over-ransomeware-aanval-uw-gegevens-zijn-ontvreemd/" target="_blank" rel="noopener">
-          <span class="src-name">Medisch Kwartier Eindhoven — gegevens ontvreemd</span>
+          <span class="src-name">Medisch Kwartier Eindhoven — data stolen</span>
           <span class="src-url">medischkwartiereindhoven.nl</span>
         </a>
         <a class="src-item" href="https://terramedici.praktijkinfo.nl/" target="_blank" rel="noopener">
@@ -1059,11 +1101,11 @@ footer {
           <span class="src-url">terramedici.praktijkinfo.nl</span>
         </a>
         <a class="src-item" href="https://de-1elijn.nl/nieuws/belangrijke-informatie-over-ransomware-aanval-uw-gegevens-zijn-hoogstwaarschijnlijk-ontvreemd/" target="_blank" rel="noopener">
-          <span class="src-name">Huisartsenpraktijk De 1e Lijn (Den Hoorn) — gegevens hoogstwaarschijnlijk ontvreemd</span>
+          <span class="src-name">Huisartsenpraktijk De 1e Lijn (Den Hoorn) — data most likely stolen</span>
           <span class="src-url">de-1elijn.nl</span>
         </a>
         <a class="src-item" href="https://www.mcboschdijk.nl/problemen-portaal-datalek/" target="_blank" rel="noopener">
-          <span class="src-name">Huisarts Boschdijk Eindhoven — problemen portaal / datalek</span>
+          <span class="src-name">Huisarts Boschdijk Eindhoven — portal problems / data breach</span>
           <span class="src-url">mcboschdijk.nl</span>
         </a>
         <a class="src-item" href="https://www.hadeurne.nl/" target="_blank" rel="noopener">
@@ -1071,12 +1113,16 @@ footer {
           <span class="src-url">hadeurne.nl</span>
         </a>
         <a class="src-item" href="https://huisartsenpraktijkhartendorp.nl/wp-content/uploads/2026/04/Informatie-data-incident-Chipsoft-Praktijk-Hartendorp.pdf" target="_blank" rel="noopener">
-          <span class="src-name">Praktijk Hartendorp (Schoorl) — patiëntbrief data-incident (PDF)</span>
+          <span class="src-name">Praktijk Hartendorp (Schoorl) — patient letter data incident (PDF)</span>
           <span class="src-url">huisartsenpraktijkhartendorp.nl</span>
         </a>
         <a class="src-item" href="https://cdn.prod.website-files.com/6814cbfb9cf846862013146a/69e0f47e4c035ab1ff3a5817_Cyberaanval%20Chipsoft.pdf" target="_blank" rel="noopener">
-          <span class="src-name">MKA Kennemer &amp; Meer — patiëntbrief cyberaanval ChipSoft (PDF)</span>
+          <span class="src-name">MKA Kennemer &amp; Meer — patient letter cyber attack ChipSoft (PDF)</span>
           <span class="src-url">mkakennemerenmeer.nl</span>
+        </a>
+        <a class="src-item" href="https://www.bernhoven.nl/nieuws/data-incident-bij-chipsoft/" target="_blank" rel="noopener">
+          <span class="src-name">Bernhoven Ziekenhuis — data incident at ChipSoft</span>
+          <span class="src-url">bernhoven.nl</span>
         </a>
       </div>
 
@@ -1087,7 +1133,7 @@ footer {
 
 <footer>
   <span class="footer-brand">EPD<em>fail</em> &mdash; mapping healthcare data breaches in the Netherlands</span>
-  <span>Independent awareness project &nbsp;&middot;&nbsp; not an official communication &nbsp;&middot;&nbsp; 18 Apr 2026</span>
+  <span>Independent awareness project &nbsp;&middot;&nbsp; not an official communication &nbsp;&middot;&nbsp; 19 Apr 2026</span>
 </footer>
 
 <script>
@@ -1099,22 +1145,22 @@ const hospitals = [
   {id:"Heliomare",name:"Heliomare",full:"Heliomare",city:"Wijk aan Zee",pop:20000,catchment:"Noord-Holland",x:35.976,y:38.264,r:1.51,status:"HIT",htype:"REHAB",note:"Confirmed: possibly affected",isGP:false,isCluster:false},
   {id:"MKA K&M",name:"MKA K&M",full:"MKA Kennemer & Meer",city:"Haarlem",pop:15000,catchment:"Kennemer & Meer",x:36.755,y:42.503,r:1.307,status:"HIT",htype:"SPECIALIST",note:"Patient letter sent: data stolen",isGP:false,isCluster:false},
   {id:"Maastro",name:"Maastro",full:"Maastro (radiotherapie)",city:"Maastricht",pop:18000,catchment:"Zuid-Limburg",x:60.964,y:95.628,r:1.432,status:"HIT",htype:"ONCOLOGY",note:"Confirmed hit",isGP:false,isCluster:false},
-  {id:"BovenIJ",name:"BovenIJ",full:"BovenIJ Ziekenhuis",city:"Amsterdam-Noord",pop:250000,catchment:"Amsterdam-Noord, Zaanstreek",x:43.014,y:41.621,r:5.337,status:"SILENT",htype:"HOSPITAL",note:"No statement 5+ days, portal offline",isGP:false,isCluster:false},
-  {id:"Bravis",name:"Bravis",full:"Bravis Ziekenhuis",city:"Bergen op Zoom",pop:300000,catchment:"West-Brabant",x:30.451,y:73.514,r:5.847,status:"CLEAR",htype:"HOSPITAL",note:"Latest statement: not affected",isGP:false,isCluster:false},
-  {id:"Rijnstate",name:"Rijnstate",full:"Rijnstate Ziekenhuis",city:"Arnhem",pop:220000,catchment:"Arnhem + Liemers",x:66.03,y:56.583,r:5.007,status:"CLEAR",htype:"HOSPITAL",note:"Latest statement: not affected",isGP:false,isCluster:false},
-  {id:"Franciscus",name:"Franciscus",full:"Franciscus Gasthuis",city:"Rotterdam",pop:280000,catchment:"Rotterdam + Schiedam",x:33.202,y:58.748,r:5.649,status:"CLEAR",htype:"HOSPITAL",note:"Confirmed: no data stolen",isGP:false,isCluster:false},
-  {id:"ASz",name:"ASz",full:"Albert Schweitzer Ziekenhuis",city:"Dordrecht",pop:180000,catchment:"Dordrecht + Alblasserwaard",x:37.443,y:62.583,r:4.529,status:"CLEAR",htype:"HOSPITAL",note:"Confirmed: no data stolen",isGP:false,isCluster:false},
-  {id:"Meander",name:"Meander",full:"Meander Medisch Centrum",city:"Amersfoort",pop:260000,catchment:"Amersfoort + Eemland",x:54.017,y:50.489,r:5.443,status:"CLEAR",htype:"HOSPITAL",note:"Confirmed: not affected",isGP:false,isCluster:false},
-  {id:"IJsselland",name:"IJsselland",full:"IJsselland Ziekenhuis",city:"Capelle a/d IJssel",pop:200000,catchment:"Capelle + Krimpen",x:35.723,y:58.399,r:4.774,status:"CLEAR",htype:"HOSPITAL",note:"Not affected, portal offline precaution",isGP:false,isCluster:false},
-  {id:"Flevoziekenhuis",name:"Flevoziekenhuis",full:"Flevoziekenhuis",city:"Almere",pop:430000,catchment:"Almere + Flevoland",x:50.166,y:43.137,r:7.0,status:"CLEAR",htype:"HOSPITAL",note:"Confirmed: not affected",isGP:false,isCluster:false},
-  {id:"Tergooi",name:"Tergooi",full:"Tergooi MC",city:"Hilversum",pop:185000,catchment:"Gooi + Vechtstreek",x:49.203,y:48.241,r:4.591,status:"CLEAR",htype:"HOSPITAL",note:"Confirmed: not affected",isGP:false,isCluster:false},
-  {id:"Deventer",name:"Deventer",full:"Deventer Ziekenhuis",city:"Deventer",pop:150000,catchment:"Deventer + Salland",x:71.784,y:47.011,r:4.134,status:"CLEAR",htype:"HOSPITAL",note:"Confirmed: not affected",isGP:false,isCluster:false},
-  {id:"Diakonessenhuis",name:"Diakonessenhuis",full:"Diakonessenhuis",city:"Utrecht",pop:190000,catchment:"Utrecht Oost + Zeist",x:47.988,y:52.663,r:4.653,status:"CLEAR",htype:"HOSPITAL",note:"Confirmed: not affected",isGP:false,isCluster:false},
+  {id:"BovenIJ",name:"BovenIJ",full:"BovenIJ Ziekenhuis",city:"Amsterdam-Noord",pop:250000,catchment:"Amsterdam-Noord, Zaanstreek",x:43.014,y:41.621,r:5.337,status:"AWAITING",htype:"HOSPITAL",note:"Last update 14 Apr. Awaiting further communication.",isGP:false,isCluster:false},
+  {id:"Bravis",name:"Bravis",full:"Bravis Ziekenhuis",city:"Bergen op Zoom",pop:300000,catchment:"West-Brabant",x:30.451,y:73.514,r:5.847,status:"CLEAR",htype:"HOSPITAL",note:"Latest statement: not affected. Patient portal still offline as of 19 Apr",isGP:false,isCluster:false},
+  {id:"Rijnstate",name:"Rijnstate",full:"Rijnstate Ziekenhuis",city:"Arnhem",pop:220000,catchment:"Arnhem + Liemers",x:66.03,y:56.583,r:5.007,status:"CLEAR",htype:"HOSPITAL",note:"Latest statement: not affected. Patient portal back online as of 19 Apr",isGP:false,isCluster:false},
+  {id:"Franciscus",name:"Franciscus",full:"Franciscus Gasthuis",city:"Rotterdam",pop:280000,catchment:"Rotterdam + Schiedam",x:33.202,y:58.748,r:5.649,status:"CLEAR",htype:"HOSPITAL",note:"Confirmed: no data stolen. Patient portal still offline as of 19 Apr",isGP:false,isCluster:false},
+  {id:"ASz",name:"ASz",full:"Albert Schweitzer Ziekenhuis",city:"Dordrecht",pop:180000,catchment:"Dordrecht + Alblasserwaard",x:37.443,y:62.583,r:4.529,status:"CLEAR",htype:"HOSPITAL",note:"Confirmed: no data stolen. Patient portal still offline as of 19 Apr",isGP:false,isCluster:false},
+  {id:"Meander",name:"Meander",full:"Meander Medisch Centrum",city:"Amersfoort",pop:260000,catchment:"Amersfoort + Eemland",x:54.017,y:50.489,r:5.443,status:"CLEAR",htype:"HOSPITAL",note:"Confirmed: not affected. Patient portal still offline as of 19 Apr",isGP:false,isCluster:false},
+  {id:"IJsselland",name:"IJsselland",full:"IJsselland Ziekenhuis",city:"Capelle a/d IJssel",pop:200000,catchment:"Capelle + Krimpen",x:35.723,y:58.399,r:4.774,status:"CLEAR",htype:"HOSPITAL",note:"Confirmed: not affected. Patient portal still offline as of 19 Apr",isGP:false,isCluster:false},
+  {id:"Flevoziekenhuis",name:"Flevoziekenhuis",full:"Flevoziekenhuis",city:"Almere",pop:430000,catchment:"Almere + Flevoland",x:50.166,y:43.137,r:7.0,status:"CLEAR",htype:"HOSPITAL",note:"Confirmed: not affected. Patient portal still offline as of 19 Apr",isGP:false,isCluster:false},
+  {id:"Tergooi",name:"Tergooi",full:"Tergooi MC",city:"Hilversum",pop:185000,catchment:"Gooi + Vechtstreek",x:49.203,y:48.241,r:4.591,status:"CLEAR",htype:"HOSPITAL",note:"Confirmed: not affected. Patient portal still offline as of 19 Apr",isGP:false,isCluster:false},
+  {id:"Deventer",name:"Deventer",full:"Deventer Ziekenhuis",city:"Deventer",pop:150000,catchment:"Deventer + Salland",x:71.784,y:47.011,r:4.134,status:"CLEAR",htype:"HOSPITAL",note:"Confirmed: not affected. Patient portal still offline as of 19 Apr",isGP:false,isCluster:false},
+  {id:"Diakonessenhuis",name:"Diakonessenhuis",full:"Diakonessenhuis",city:"Utrecht",pop:190000,catchment:"Utrecht Oost + Zeist",x:47.988,y:52.663,r:4.653,status:"CLEAR",htype:"HOSPITAL",note:"Confirmed: not affected. Patient portal still offline as of 19 Apr",isGP:false,isCluster:false},
   {id:"Heikant",name:"Heikant",full:"Huisartsenpraktijk Heikant",city:"Veldhoven",pop:5875,catchment:"~2,300 registered patients",x:54.476,y:76.278,r:0.512,status:"HIT",htype:"GP",note:"Confirmed: data stolen",isGP:true,isCluster:false},
-  {id:"Medisch Kwartier",name:"Medisch Kwartier",full:"Medisch Kwartier Eindhoven",city:"Eindhoven",pop:4700,catchment:"~2,300 registered patients",x:56.081,y:75.38,r:0.512,status:"HIT",htype:"GP",note:"Website: gegevens ontvreemd",isGP:true,isCluster:false},
+  {id:"Medisch Kwartier",name:"Medisch Kwartier",full:"Medisch Kwartier Eindhoven",city:"Eindhoven",pop:4700,catchment:"~2,300 registered patients",x:56.081,y:75.38,r:0.512,status:"HIT",htype:"GP",note:"Website confirms: data stolen",isGP:true,isCluster:false},
   {id:"Boschdijk",name:"Boschdijk",full:"Huisarts Boschdijk",city:"Eindhoven",pop:4700,catchment:"~2,300 registered patients",x:55.553,y:75.138,r:0.512,status:"HIT",htype:"GP",note:"Confirmed: slachtoffer ransomware",isGP:true,isCluster:false},
   {id:"Deurne HA",name:"Deurne HA",full:"Huisartsenpraktijk Van de Kerkhof",city:"Deurne",pop:2350,catchment:"~2,300 registered patients",x:62.981,y:74.724,r:0.512,status:"HIT",htype:"GP",note:"Confirmed hit",isGP:true,isCluster:false},
-  {id:"De 1e Lijn",name:"De 1e Lijn",full:"Huisartsenpraktijk De 1e Lijn",city:"Den Hoorn",pop:5875,catchment:"~2,300 registered patients",x:29.992,y:56.303,r:0.512,status:"HIT",htype:"GP",note:"Hoogstwaarschijnlijk ontvreemd (17 Apr)",isGP:true,isCluster:false},
+  {id:"De 1e Lijn",name:"De 1e Lijn",full:"Huisartsenpraktijk De 1e Lijn",city:"Den Hoorn",pop:5875,catchment:"~2,300 registered patients",x:29.992,y:56.303,r:0.512,status:"HIT",htype:"GP",note:"Most likely stolen (17 Apr)",isGP:true,isCluster:false},
   {id:"Hartendorp",name:"Hartendorp",full:"Praktijk Hartendorp",city:"Schoorl",pop:2350,catchment:"~2,300 registered patients",x:38.062,y:31.033,r:0.512,status:"HIT",htype:"GP",note:"Patient letter: data possibly stolen",isGP:true,isCluster:false},
   {id:"Mercuur",name:"Mercuur",full:"Mercuur Huisartsenpraktijk",city:"Eindhoven",pop:4700,catchment:"~2,300 registered patients",x:55.783,y:74.966,r:0.512,status:"HIT",htype:"GP",note:"Confirmed hit — Frankrijkstraat, Eindhoven",isGP:true,isCluster:false},
   {id:"Terramedici",name:"Terramedici",full:"Huisartsenpraktijk Terra Medici",city:"Maarheeze",pop:2350,catchment:"~2,300 registered patients",x:59.176,y:79.761,r:0.512,status:"HIT",htype:"GP",note:"Confirmed hit — Kijkakkers, Maarheeze",isGP:true,isCluster:false},
@@ -1136,7 +1182,8 @@ const hospitals = [
 
 
 
-
+,
+  {id:"Bernhoven",name:"Bernhoven",full:"Bernhoven Ziekenhuis",city:"Uden",pop:160000,catchment:"Uden + Land van Cuijk + Meierij",x:59.313,y:67.763,r:4.27,status:"CLEAR",htype:"HOSPITAL",note:"Published statement: not affected (bernhoven.nl)",isGP:false,isCluster:false}
 ];
 
 const TYPE_LABELS = {
@@ -1146,7 +1193,7 @@ const TYPE_LABELS = {
 
 const COLORS = {
   HIT:   {dot:'#c42b2b', ring:'#9a6200', core:'url(#rg-hc)', mid:'url(#rg-hm)', outer:'url(#rg-ho)', cls:'hit',    label:'Confirmed hit',  badgeBg:'rgba(196,43,43,.08)',   bc:'#c42b2b', pc:'#c42b2b'},
-  SILENT:{dot:'#c27d00', ring:'#c27d00', core:'url(#rg-sc)', mid:'url(#rg-sc)', outer:'url(#rg-so)', cls:'silent', label:'Silent',         badgeBg:'rgba(194,125,0,.08)',   bc:'#9a6200', pc:'#9a6200'},
+  AWAITING:{dot:'#c27d00', ring:'#c27d00', core:'url(#rg-sc)', mid:'url(#rg-sc)', outer:'url(#rg-so)', cls:'silent', label:'Awaiting communication',         badgeBg:'rgba(194,125,0,.08)',   bc:'#9a6200', pc:'#9a6200'},
   CLEAR: {dot:'#1a6b35', ring:'#1a6b35', core:'url(#rg-cc)', mid:'url(#rg-cc)', outer:'url(#rg-cc)', cls:'clear',  label:'Not affected',   badgeBg:'rgba(26,107,53,.08)',   bc:'#1a6b35', pc:'#1a6b35'},
 };
 
@@ -1223,7 +1270,7 @@ const sidebarItems = [
   ...gpList,
 ];
 
-const order = {HIT:0, SILENT:1, CLEAR:2};
+const order = {HIT:0, AWAITING:1, CLEAR:2};
 const typeOrder = {HOSPITAL:0, FORENSIC:1, ONCOLOGY:2, REHAB:3, SPECIALIST:4, GP:5};
 const sorted = [...sidebarItems].sort((a,b) => order[a.status]-order[b.status] || typeOrder[a.htype]-typeOrder[b.htype] || b.pop-a.pop);
 const maxPop = Math.max(...sidebarItems.map(h => h.pop));
@@ -1233,7 +1280,7 @@ sorted.forEach((h, i) => {
   if (h.status !== lastStatus) {
     const grp = document.createElement('div');
     grp.className = 'h-group-label';
-    grp.textContent = {HIT:'Confirmed hit', SILENT:'Silent / suspicious', CLEAR:'Confirmed not affected'}[h.status];
+    grp.textContent = {HIT:'Confirmed hit', AWAITING:'Awaiting communication', CLEAR:'Confirmed not affected'}[h.status];
     document.getElementById('hlist').appendChild(grp);
     lastStatus = h.status;
   }
