@@ -726,7 +726,7 @@ footer {
     </div>
     <div class="stat">
       <div class="stat-label">Est. patients at risk</div>
-      <div class="stat-value red">~159k</div>
+      <div class="stat-value red">~201k</div>
       <div class="stat-sub">named institutions only</div>
     </div>
     <div class="stat">
@@ -746,7 +746,7 @@ footer {
     </div>
     <div class="stat">
       <div class="stat-label">Confirmed clear</div>
-      <div class="stat-value green">12</div>
+      <div class="stat-value green">13</div>
       <div class="stat-sub">not affected</div>
     </div>
   </div>
@@ -966,12 +966,28 @@ footer {
             <td class="tnum tpct">0.013%</td>
             <td class="tnote">~1 FTE — village practice</td>
           </tr>
+          <tr>
+            <td class="tname">Basalt (revalidatie)</td>
+            <td class="ttype">Revalidatie</td>
+            <td class="tcity">Den Haag / Zuid-Holland</td>
+            <td class="tnum">30,000</td>
+            <td class="tnum tpct">0.168%</td>
+            <td class="tnote">13 locations Zuid-Holland — ANP/Volkskrant</td>
+          </tr>
+          <tr>
+            <td class="tname">Fonkelzorg</td>
+            <td class="ttype">GP organisation</td>
+            <td class="tcity">Den Bosch / Noord-Brabant</td>
+            <td class="tnum">12,000</td>
+            <td class="tnum tpct">0.067%</td>
+            <td class="tnote">Email to patients confirmed — Omroep Brabant / DTV Nieuws</td>
+          </tr>
         </tbody>
         <tfoot>
           <tr class="exp-total">
             <td colspan="3">Total &mdash; named confirmed institutions</td>
-            <td class="tnum"><strong>158,900</strong></td>
-            <td class="tnum"><strong>0.89%</strong></td>
+            <td class="tnum"><strong>200,900</strong></td>
+            <td class="tnum"><strong>1.12%</strong></td>
             <td></td>
           </tr>
           <tr class="exp-note">
@@ -1072,9 +1088,25 @@ footer {
           <span class="src-name">Skipr — Ransomware attack hits EPR supplier ChipSoft</span>
           <span class="src-url">skipr.nl</span>
         </a>
+        <a class="src-item" href="https://basaltrevalidatie.nl/nieuws/informatie-over-hack-bij-chipsoft/" target="_blank" rel="noopener">
+          <span class="src-name">Basalt revalidatie — information about ChipSoft hack</span>
+          <span class="src-url">basaltrevalidatie.nl</span>
+        </a>
+        <a class="src-item" href="https://dtvnieuws.nl/nieuws/artikel/ook-gegevens-van-huisartsenorganisatie-fonkelzorg-gestolen-bij-cyberaanval" target="_blank" rel="noopener">
+          <span class="src-name">DTV Nieuws — Fonkelzorg patient data stolen in ChipSoft hack</span>
+          <span class="src-url">dtvnieuws.nl</span>
+        </a>
+        <a class="src-item" href="https://www.omroepbrabant.nl/nieuws/6007089/huisartsenpraktijken-waarschuwen-gegevens-patienten-mogelijk-op-straat" target="_blank" rel="noopener">
+          <span class="src-name">Omroep Brabant — Fonkelzorg and Heikant warn patients</span>
+          <span class="src-url">omroepbrabant.nl</span>
+        </a>
         <a class="src-item" href="https://tweakers.net/nieuws/246890/chipsoft-geeft-toe-dat-er-toch-gegevens-van-patienten-zijn-gestolen-bij-hack.html" target="_blank" rel="noopener">
           <span class="src-name">Tweakers — ChipSoft admits patient data was stolen in hack</span>
           <span class="src-url">tweakers.net</span>
+        </a>
+        <a class="src-item" href="https://www.nrc.nl/nieuws/2026/04/20/hackers-dwingen-chipsoft-tot-iets-meer-openheid-a4925920" target="_blank" rel="noopener">
+          <span class="src-name">NRC — Hackers force ChipSoft into slightly more openness</span>
+          <span class="src-url">nrc.nl</span>
         </a>
       </div>
 
@@ -1187,7 +1219,10 @@ const hospitals = [
 
 ,
   {id:"Bernhoven",name:"Bernhoven",full:"Bernhoven Ziekenhuis",city:"Uden",pop:160000,catchment:"Uden + Land van Cuijk + Meierij",x:59.313,y:67.763,r:4.27,status:"CLEAR",htype:"HOSPITAL",note:"Published statement: not affected (bernhoven.nl)",isGP:false,isCluster:false},
-  {id:"Maastro",name:"Maastro",full:"Maastro (radiotherapie)",city:"Maastricht",pop:18000,catchment:"Zuid-Limburg",x:60.964,y:95.628,r:1.8,status:"CLEAR",htype:"ONCOLOGY",note:"Own statement: no indications patient data affected",isGP:false,isCluster:false}
+  {id:"Maastro",name:"Maastro",full:"Maastro (radiotherapie)",city:"Maastricht",pop:18000,catchment:"Zuid-Limburg",x:60.964,y:95.628,r:1.8,status:"CLEAR",htype:"ONCOLOGY",note:"Own statement: no indications patient data affected",isGP:false,isCluster:false},
+  {id:"Basalt",name:"Basalt",full:"Basalt (revalidatie)",city:"Den Haag / Zuid-Holland",pop:30000,catchment:"Zuid-Holland (13 locations)",x:29.075,y:53.504,r:1.849,status:"HIT",htype:"REHAB",note:"Confirmed hit — 13 locations Zuid-Holland (ANP/Volkskrant)",isGP:false,isCluster:false},
+  {id:"Fonkelzorg",name:"Fonkelzorg",full:"Fonkelzorg",city:"Den Bosch / Noord-Brabant",pop:12000,catchment:"Den Bosch, Oss, Uden, Eindhoven",x:52.229,y:66.756,r:1.169,status:"HIT",htype:"GP",note:"Email to patients: data stolen (Omroep Brabant / DTV Nieuws)",isGP:false,isCluster:false},
+  {id:"LUMC",name:"LUMC",full:"Leids Universitair MC",city:"Leiden",pop:350000,catchment:"Leiden + regio",x:33.11,y:50.173,r:6.315,status:"CLEAR",htype:"HOSPITAL",note:"Confirmed not affected (own statement)",isGP:false,isCluster:false}
 ];
 
 const TYPE_LABELS = {
