@@ -746,7 +746,7 @@ footer {
     </div>
     <div class="stat">
       <div class="stat-label">Confirmed clear</div>
-      <div class="stat-value green">11</div>
+      <div class="stat-value green">12</div>
       <div class="stat-sub">not affected</div>
     </div>
   </div>
@@ -1072,6 +1072,10 @@ footer {
           <span class="src-name">Skipr — Ransomware attack hits EPR supplier ChipSoft</span>
           <span class="src-url">skipr.nl</span>
         </a>
+        <a class="src-item" href="https://tweakers.net/nieuws/246890/chipsoft-geeft-toe-dat-er-toch-gegevens-van-patienten-zijn-gestolen-bij-hack.html" target="_blank" rel="noopener">
+          <span class="src-name">Tweakers — ChipSoft admits patient data was stolen in hack</span>
+          <span class="src-url">tweakers.net</span>
+        </a>
       </div>
 
       <div class="src-group-label">Institution statements</div>
@@ -1108,6 +1112,10 @@ footer {
           <span class="src-name">Praktijk Hartendorp (Schoorl) — patient letter data incident (PDF)</span>
           <span class="src-url">huisartsenpraktijkhartendorp.nl</span>
         </a>
+        <a class="src-item" href="https://www.hadeurne.nl/wp-content/uploads/sites/437/2026/04/Patientenbrief.pdf" target="_blank" rel="noopener">
+          <span class="src-name">Huisartsenpraktijk Van de Kerkhof (Deurne) — patient letter data confirmed stolen (PDF)</span>
+          <span class="src-url">hadeurne.nl</span>
+        </a>
         <a class="src-item" href="https://cdn.prod.website-files.com/6814cbfb9cf846862013146a/69e0f47e4c035ab1ff3a5817_Cyberaanval%20Chipsoft.pdf" target="_blank" rel="noopener">
           <span class="src-name">MKA Kennemer &amp; Meer — patient letter cyber attack ChipSoft (PDF)</span>
           <span class="src-url">mkakennemerenmeer.nl</span>
@@ -1115,6 +1123,10 @@ footer {
         <a class="src-item" href="https://www.bernhoven.nl/nieuws/data-incident-bij-chipsoft/" target="_blank" rel="noopener">
           <span class="src-name">Bernhoven Ziekenhuis — data incident at ChipSoft</span>
           <span class="src-url">bernhoven.nl</span>
+        </a>
+        <a class="src-item" href="https://www.maastro.nl/" target="_blank" rel="noopener">
+          <span class="src-name">Maastro (radiotherapie) — own statement: no indications of patient data impact</span>
+          <span class="src-url">maastro.nl</span>
         </a>
       </div>
 
@@ -1150,7 +1162,7 @@ const hospitals = [
   {id:"Heikant",name:"Heikant",full:"Huisartsenpraktijk Heikant",city:"Veldhoven",pop:5875,catchment:"~2,300 registered patients",x:54.476,y:76.278,r:0.512,status:"HIT",htype:"GP",note:"Confirmed: data stolen",isGP:true,isCluster:false},
   {id:"Medisch Kwartier",name:"Medisch Kwartier",full:"Medisch Kwartier Eindhoven",city:"Eindhoven",pop:4700,catchment:"~2,300 registered patients",x:56.081,y:75.38,r:0.512,status:"HIT",htype:"GP",note:"Website confirms: data stolen",isGP:true,isCluster:false},
   {id:"Boschdijk",name:"Boschdijk",full:"Huisarts Boschdijk",city:"Eindhoven",pop:4700,catchment:"~2,300 registered patients",x:55.553,y:75.138,r:0.512,status:"HIT",htype:"GP",note:"Confirmed: slachtoffer ransomware",isGP:true,isCluster:false},
-  {id:"Deurne HA",name:"Deurne HA",full:"Huisartsenpraktijk Van de Kerkhof",city:"Deurne",pop:2350,catchment:"~2,300 registered patients",x:62.981,y:74.724,r:0.512,status:"HIT",htype:"GP",note:"Confirmed hit",isGP:true,isCluster:false},
+  {id:"Deurne HA",name:"Deurne HA",full:"Huisartsenpraktijk Van de Kerkhof",city:"Deurne",pop:2350,catchment:"~2,300 registered patients",x:62.981,y:74.724,r:0.512,status:"HIT",htype:"GP",note:"Patient letter 17 Apr: data confirmed stolen (hadeurne.nl)",isGP:true,isCluster:false},
   {id:"De 1e Lijn",name:"De 1e Lijn",full:"Huisartsenpraktijk De 1e Lijn",city:"Den Hoorn",pop:5875,catchment:"~2,300 registered patients",x:29.992,y:56.303,r:0.512,status:"HIT",htype:"GP",note:"Most likely stolen (17 Apr)",isGP:true,isCluster:false},
   {id:"Hartendorp",name:"Hartendorp",full:"Praktijk Hartendorp",city:"Schoorl",pop:2350,catchment:"~2,300 registered patients",x:38.062,y:31.033,r:0.512,status:"HIT",htype:"GP",note:"Patient letter: data possibly stolen",isGP:true,isCluster:false},
   {id:"Mercuur",name:"Mercuur",full:"Mercuur Huisartsenpraktijk",city:"Eindhoven",pop:4700,catchment:"~2,300 registered patients",x:55.783,y:74.966,r:0.512,status:"HIT",htype:"GP",note:"Confirmed hit — Frankrijkstraat, Eindhoven",isGP:true,isCluster:false},
@@ -1174,7 +1186,8 @@ const hospitals = [
 
 
 ,
-  {id:"Bernhoven",name:"Bernhoven",full:"Bernhoven Ziekenhuis",city:"Uden",pop:160000,catchment:"Uden + Land van Cuijk + Meierij",x:59.313,y:67.763,r:4.27,status:"CLEAR",htype:"HOSPITAL",note:"Published statement: not affected (bernhoven.nl)",isGP:false,isCluster:false}
+  {id:"Bernhoven",name:"Bernhoven",full:"Bernhoven Ziekenhuis",city:"Uden",pop:160000,catchment:"Uden + Land van Cuijk + Meierij",x:59.313,y:67.763,r:4.27,status:"CLEAR",htype:"HOSPITAL",note:"Published statement: not affected (bernhoven.nl)",isGP:false,isCluster:false},
+  {id:"Maastro",name:"Maastro",full:"Maastro (radiotherapie)",city:"Maastricht",pop:18000,catchment:"Zuid-Limburg",x:60.964,y:95.628,r:1.8,status:"CLEAR",htype:"ONCOLOGY",note:"Own statement: no indications patient data affected",isGP:false,isCluster:false}
 ];
 
 const TYPE_LABELS = {
