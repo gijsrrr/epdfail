@@ -726,7 +726,7 @@ footer {
     </div>
     <div class="stat">
       <div class="stat-label">Est. patients at risk</div>
-      <div class="stat-value red">~201k</div>
+      <div class="stat-value red">~203k</div>
       <div class="stat-sub">named institutions only</div>
     </div>
     <div class="stat">
@@ -982,12 +982,20 @@ footer {
             <td class="tnum tpct">0.067%</td>
             <td class="tnote">Email to patients confirmed — Omroep Brabant / DTV Nieuws</td>
           </tr>
+          <tr>
+            <td class="tname">Medisch Centrum Soerendonk</td>
+            <td class="ttype">GP practice</td>
+            <td class="tcity">Soerendonk</td>
+            <td class="tnum">2,350</td>
+            <td class="tnum tpct">0.013%</td>
+            <td class="tnote">~1 FTE — patient letter 17 Apr, signed Klinkers &amp; Govaert</td>
+          </tr>
         </tbody>
         <tfoot>
           <tr class="exp-total">
             <td colspan="3">Total &mdash; named confirmed institutions</td>
-            <td class="tnum"><strong>200,900</strong></td>
-            <td class="tnum"><strong>1.12%</strong></td>
+            <td class="tnum"><strong>203,250</strong></td>
+            <td class="tnum"><strong>1.14%</strong></td>
             <td></td>
           </tr>
           <tr class="exp-note">
@@ -1140,6 +1148,10 @@ footer {
           <span class="src-name">Huisartsenpraktijk Van de Kerkhof (Deurne)</span>
           <span class="src-url">hadeurne.nl</span>
         </a>
+        <a class="src-item" href="https://medischcentrumsoerendonk.uwartsonline.nl/wp-content/uploads/sites/431/2026/04/Brief-website.pdf" target="_blank" rel="noopener">
+          <span class="src-name">Medisch Centrum Soerendonk — patient letter data confirmed stolen (PDF)</span>
+          <span class="src-url">medischcentrumsoerendonk.uwartsonline.nl</span>
+        </a>
         <a class="src-item" href="https://huisartsenpraktijkhartendorp.nl/wp-content/uploads/2026/04/Informatie-data-incident-Chipsoft-Praktijk-Hartendorp.pdf" target="_blank" rel="noopener">
           <span class="src-name">Praktijk Hartendorp (Schoorl) — patient letter data incident (PDF)</span>
           <span class="src-url">huisartsenpraktijkhartendorp.nl</span>
@@ -1147,6 +1159,10 @@ footer {
         <a class="src-item" href="https://www.hadeurne.nl/wp-content/uploads/sites/437/2026/04/Patientenbrief.pdf" target="_blank" rel="noopener">
           <span class="src-name">Huisartsenpraktijk Van de Kerkhof (Deurne) — patient letter data confirmed stolen (PDF)</span>
           <span class="src-url">hadeurne.nl</span>
+        </a>
+        <a class="src-item" href="https://medischcentrumsoerendonk.uwartsonline.nl/wp-content/uploads/sites/431/2026/04/Brief-website.pdf" target="_blank" rel="noopener">
+          <span class="src-name">Medisch Centrum Soerendonk — patient letter data confirmed stolen (PDF)</span>
+          <span class="src-url">medischcentrumsoerendonk.uwartsonline.nl</span>
         </a>
         <a class="src-item" href="https://cdn.prod.website-files.com/6814cbfb9cf846862013146a/69e0f47e4c035ab1ff3a5817_Cyberaanval%20Chipsoft.pdf" target="_blank" rel="noopener">
           <span class="src-name">MKA Kennemer &amp; Meer — patient letter cyber attack ChipSoft (PDF)</span>
@@ -1222,7 +1238,8 @@ const hospitals = [
   {id:"Maastro",name:"Maastro",full:"Maastro (radiotherapie)",city:"Maastricht",pop:18000,catchment:"Zuid-Limburg",x:60.964,y:95.628,r:1.8,status:"CLEAR",htype:"ONCOLOGY",note:"Own statement: no indications patient data affected",isGP:false,isCluster:false},
   {id:"Basalt",name:"Basalt",full:"Basalt (revalidatie)",city:"Den Haag / Zuid-Holland",pop:30000,catchment:"Zuid-Holland (13 locations)",x:29.075,y:53.504,r:1.849,status:"HIT",htype:"REHAB",note:"Confirmed hit — 13 locations Zuid-Holland (ANP/Volkskrant)",isGP:false,isCluster:false},
   {id:"Fonkelzorg",name:"Fonkelzorg",full:"Fonkelzorg",city:"Den Bosch / Noord-Brabant",pop:12000,catchment:"Den Bosch, Oss, Uden, Eindhoven",x:52.229,y:66.756,r:1.169,status:"HIT",htype:"GP",note:"Email to patients: data stolen (Omroep Brabant / DTV Nieuws)",isGP:false,isCluster:false},
-  {id:"LUMC",name:"LUMC",full:"Leids Universitair MC",city:"Leiden",pop:350000,catchment:"Leiden + regio",x:33.11,y:50.173,r:6.315,status:"CLEAR",htype:"HOSPITAL",note:"Confirmed not affected (own statement)",isGP:false,isCluster:false}
+  {id:"LUMC",name:"LUMC",full:"Leids Universitair MC",city:"Leiden",pop:350000,catchment:"Leiden + regio",x:33.11,y:50.173,r:6.315,status:"CLEAR",htype:"HOSPITAL",note:"Confirmed not affected (own statement)",isGP:false,isCluster:false},
+  {id:"Soerendonk",name:"Soerendonk",full:"Medisch Centrum Soerendonk",city:"Soerendonk",pop:2350,catchment:"~2,350 registered patients",x:58.304,y:78.968,r:0.517,status:"HIT",htype:"GP",note:"Patient letter 17 Apr: data confirmed stolen (Klinkers & Govaert)",isGP:true,isCluster:false}
 ];
 
 const TYPE_LABELS = {
