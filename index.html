@@ -708,7 +708,7 @@ footer {
     <div class="hmeta">
       <div class="hincident">
         <strong>Incident CS-2026-0412</strong> &nbsp;&middot;&nbsp;
-        Detected 7 Apr 2026 &nbsp;&middot;&nbsp; Last updated 19 Apr 2026
+        Detected 7 Apr 2026 &nbsp;&middot;&nbsp; Last updated 20 Apr 2026
       </div>
     </div>
   </div>
@@ -726,7 +726,7 @@ footer {
     </div>
     <div class="stat">
       <div class="stat-label">Est. patients at risk</div>
-      <div class="stat-value red">~177k</div>
+      <div class="stat-value red">~159k</div>
       <div class="stat-sub">named institutions only</div>
     </div>
     <div class="stat">
@@ -887,14 +887,6 @@ footer {
             <td class="tnote">Confirmed: possibly affected</td>
           </tr>
           <tr>
-            <td class="tname">Maastro (radiotherapie)</td>
-            <td class="ttype">Oncology</td>
-            <td class="tcity">Maastricht</td>
-            <td class="tnum">18,000</td>
-            <td class="tnum tpct">0.101%</td>
-            <td class="tnote">Confirmed</td>
-          </tr>
-          <tr>
             <td class="tname">MKA Kennemer & Meer</td>
             <td class="ttype">Specialist</td>
             <td class="tcity">Haarlem</td>
@@ -978,8 +970,8 @@ footer {
         <tfoot>
           <tr class="exp-total">
             <td colspan="3">Total &mdash; named confirmed institutions</td>
-            <td class="tnum"><strong>176,900</strong></td>
-            <td class="tnum"><strong>0.99%</strong></td>
+            <td class="tnum"><strong>158,900</strong></td>
+            <td class="tnum"><strong>0.89%</strong></td>
             <td></td>
           </tr>
           <tr class="exp-note">
@@ -1013,14 +1005,14 @@ footer {
     </div>
     <div class="ctx-block">
       <div class="ctx-label">Sources &amp; status</div>
-      <div class="ctx-text">Status based on institution websites, NOS, Volkskrant, ANP, LHV, L1 Nieuws, and Skipr as of 19 Apr 2026. GP addresses geocoded via Google Places. BovenIJ remains silent with portal offline. Forensic investigation by ChipSoft and Z-CERT ongoing. Independent awareness project — not an official communication.</div>
+      <div class="ctx-text">Status based on institution websites, NOS, Volkskrant, ANP, LHV, L1 Nieuws, and Skipr as of 20 Apr 2026. GP addresses geocoded via Google Places. BovenIJ remains silent with portal offline. Forensic investigation by ChipSoft and Z-CERT ongoing. Independent awareness project — not an official communication.</div>
     </div>
   </div>
 
   <!-- Accuracy note -->
   <div class="callout amber" style="margin-top:1.25rem">
     <div style="flex:1">
-      <div class="callout-label" style="color:var(--amber)">Disclaimer &mdash; 19 Apr 2026</div>
+      <div class="callout-label" style="color:var(--amber)">Disclaimer &mdash; 20 Apr 2026</div>
       <div class="callout-text">This page aggregates <strong>publicly available information</strong> from institution websites, official press releases, and media reporting. It does not make claims beyond what sources state. Named GP practices are plotted at geocoded addresses with a ~2,300 patient radius (Dutch average). GP practices are plotted only where a breach is confirmed or suspected. Population figures are estimates. This is an independent public-awareness project — not affiliated with ChipSoft, Z-CERT, or any healthcare institution. For official information, consult <strong>informatie.chipsoft.com</strong> and your own healthcare provider.</div>
     </div>
   </div>
@@ -1030,7 +1022,7 @@ footer {
   <div class="card" style="margin-top:1.25rem">
     <div class="card-head">
       <span class="card-head-title">Sources</span>
-      <span class="card-head-meta">all publicly available — last verified 19 Apr 2026</span>
+      <span class="card-head-meta">all publicly available — last verified 20 Apr 2026</span>
     </div>
     <div class="src-body">
 
@@ -1133,7 +1125,7 @@ footer {
 
 <footer>
   <span class="footer-brand">EPD<em>fail</em> &mdash; mapping healthcare data breaches in the Netherlands</span>
-  <span>Independent awareness project &nbsp;&middot;&nbsp; not an official communication &nbsp;&middot;&nbsp; 19 Apr 2026</span>
+  <span>Independent awareness project &nbsp;&middot;&nbsp; not an official communication &nbsp;&middot;&nbsp; 20 Apr 2026</span>
 </footer>
 
 <script>
@@ -1144,7 +1136,6 @@ const hospitals = [
   {id:"Rijndam",name:"Rijndam",full:"Rijndam Revalidatie",city:"Rotterdam",pop:25000,catchment:"Zuid-Holland",x:33.431,y:59.446,r:1.688,status:"HIT",htype:"REHAB",note:"Confirmed: investigating impact",isGP:false,isCluster:false},
   {id:"Heliomare",name:"Heliomare",full:"Heliomare",city:"Wijk aan Zee",pop:20000,catchment:"Noord-Holland",x:35.976,y:38.264,r:1.51,status:"HIT",htype:"REHAB",note:"Confirmed: possibly affected",isGP:false,isCluster:false},
   {id:"MKA K&M",name:"MKA K&M",full:"MKA Kennemer & Meer",city:"Haarlem",pop:15000,catchment:"Kennemer & Meer",x:36.755,y:42.503,r:1.307,status:"HIT",htype:"SPECIALIST",note:"Patient letter sent: data stolen",isGP:false,isCluster:false},
-  {id:"Maastro",name:"Maastro",full:"Maastro (radiotherapie)",city:"Maastricht",pop:18000,catchment:"Zuid-Limburg",x:60.964,y:95.628,r:1.432,status:"HIT",htype:"ONCOLOGY",note:"Confirmed hit",isGP:false,isCluster:false},
   {id:"BovenIJ",name:"BovenIJ",full:"BovenIJ Ziekenhuis",city:"Amsterdam-Noord",pop:250000,catchment:"Amsterdam-Noord, Zaanstreek",x:43.014,y:41.621,r:5.337,status:"AWAITING",htype:"HOSPITAL",note:"Last update 14 Apr. Awaiting further communication.",isGP:false,isCluster:false},
   {id:"Bravis",name:"Bravis",full:"Bravis Ziekenhuis",city:"Bergen op Zoom",pop:300000,catchment:"West-Brabant",x:30.451,y:73.514,r:5.847,status:"CLEAR",htype:"HOSPITAL",note:"Latest statement: not affected. Patient portal still offline as of 19 Apr",isGP:false,isCluster:false},
   {id:"Rijnstate",name:"Rijnstate",full:"Rijnstate Ziekenhuis",city:"Arnhem",pop:220000,catchment:"Arnhem + Liemers",x:66.03,y:56.583,r:5.007,status:"CLEAR",htype:"HOSPITAL",note:"Latest statement: not affected. Patient portal back online as of 19 Apr",isGP:false,isCluster:false},
