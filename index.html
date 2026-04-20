@@ -746,7 +746,7 @@ footer {
     </div>
     <div class="stat">
       <div class="stat-label">Confirmed clear</div>
-      <div class="stat-value green">13</div>
+      <div class="stat-value green">15</div>
       <div class="stat-sub">not affected</div>
     </div>
   </div>
@@ -1172,6 +1172,14 @@ footer {
           <span class="src-name">Bernhoven Ziekenhuis — data incident at ChipSoft</span>
           <span class="src-url">bernhoven.nl</span>
         </a>
+        <a class="src-item" href="https://www.omroepzeeland.nl/nieuws/18386238/ziekenhuizen-niet-getroffen-door-datalek" target="_blank" rel="noopener">
+          <span class="src-name">Omroep Zeeland — ADRZ and ZorgSaam not affected by data breach</span>
+          <span class="src-url">omroepzeeland.nl</span>
+        </a>
+        <a class="src-item" href="https://www.adrz.nl/update-gebruik-mijn-adrz/" target="_blank" rel="noopener">
+          <span class="src-name">ADRZ — update patient portal, no data leaked</span>
+          <span class="src-url">adrz.nl</span>
+        </a>
         <a class="src-item" href="https://www.maastro.nl/" target="_blank" rel="noopener">
           <span class="src-name">Maastro (radiotherapie) — own statement: no indications of patient data impact</span>
           <span class="src-url">maastro.nl</span>
@@ -1239,7 +1247,13 @@ const hospitals = [
   {id:"Basalt",name:"Basalt",full:"Basalt (revalidatie)",city:"Den Haag / Zuid-Holland",pop:30000,catchment:"Zuid-Holland (13 locations)",x:29.075,y:53.504,r:1.849,status:"HIT",htype:"REHAB",note:"Confirmed hit — 13 locations Zuid-Holland (ANP/Volkskrant)",isGP:false,isCluster:false},
   {id:"Fonkelzorg",name:"Fonkelzorg",full:"Fonkelzorg",city:"Den Bosch / Noord-Brabant",pop:12000,catchment:"Den Bosch, Oss, Uden, Eindhoven",x:52.229,y:66.756,r:1.169,status:"HIT",htype:"GP",note:"Email to patients: data stolen (Omroep Brabant / DTV Nieuws)",isGP:false,isCluster:false},
   {id:"LUMC",name:"LUMC",full:"Leids Universitair MC",city:"Leiden",pop:350000,catchment:"Leiden + regio",x:33.11,y:50.173,r:6.315,status:"CLEAR",htype:"HOSPITAL",note:"Confirmed not affected (own statement)",isGP:false,isCluster:false},
-  {id:"Soerendonk",name:"Soerendonk",full:"Medisch Centrum Soerendonk",city:"Soerendonk",pop:2350,catchment:"~2,350 registered patients",x:58.304,y:78.968,r:0.517,status:"HIT",htype:"GP",note:"Patient letter 17 Apr: data confirmed stolen (Klinkers & Govaert)",isGP:true,isCluster:false}
+  {id:"Soerendonk",name:"Soerendonk",full:"Medisch Centrum Soerendonk",city:"Soerendonk",pop:2350,catchment:"~2,350 registered patients",x:58.304,y:78.968,r:0.517,status:"HIT",htype:"GP",note:"Patient letter 17 Apr: data confirmed stolen (Klinkers & Govaert)",isGP:true,isCluster:false},
+  {id:"ADRZ",name:"ADRZ",full:"ADRZ",city:"Goes (Zeeland)",pop:120000,catchment:"Zeeland",x:19.676,y:73.272,r:3.698,status:"CLEAR",htype:"HOSPITAL",note:"Self-hosted HiX — confirmed not affected (Omroep Zeeland)",isGP:false,isCluster:false},
+  {id:"ZorgSaam",name:"ZorgSaam",full:"Ziekenhuis ZorgSaam",city:"Terneuzen",pop:80000,catchment:"Zeeuws-Vlaanderen",x:18.301,y:79.037,r:3.019,status:"CLEAR",htype:"HOSPITAL",note:"Confirmed not affected — own statement (Omroep Zeeland)",isGP:false,isCluster:false},
+  {id:"ADRZ",name:"ADRZ",full:"Admiraal De Ruyter Ziekenhuis",city:"Goes / Vlissingen",pop:180000,catchment:"Zeeland",x:19.653,y:73.064,r:4.529,status:"CLEAR",htype:"HOSPITAL",note:"Confirmed not affected",isGP:false,isCluster:false},
+  {id:"Zorgsaam",name:"Zorgsaam",full:"Zorgsaam Zorggroep",city:"Terneuzen",pop:120000,catchment:"Zeeuws-Vlaanderen",x:18.301,y:79.037,r:3.698,status:"CLEAR",htype:"HOSPITAL",note:"Confirmed not affected",isGP:false,isCluster:false},
+  {id:"ADRZ",name:"ADRZ",full:"ADRZ",city:"Goes / Vlissingen",pop:180000,catchment:"Zeeland",x:19.768,y:73.203,r:4.529,status:"CLEAR",htype:"HOSPITAL",note:"Confirmed not affected",isGP:false,isCluster:false},
+  {id:"Zorgsaam",name:"Zorgsaam",full:"Zorgsaam ZVL",city:"Terneuzen",pop:110000,catchment:"Zeeuws-Vlaanderen",x:18.301,y:79.037,r:3.54,status:"CLEAR",htype:"HOSPITAL",note:"Confirmed not affected",isGP:false,isCluster:false}
 ];
 
 const TYPE_LABELS = {
