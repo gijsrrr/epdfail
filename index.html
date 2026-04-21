@@ -726,7 +726,7 @@ footer {
     </div>
     <div class="stat">
       <div class="stat-label">Est. patients at risk</div>
-      <div class="stat-value red">~203k</div>
+      <div class="stat-value red">~218k</div>
       <div class="stat-sub">named institutions only</div>
     </div>
     <div class="stat">
@@ -990,12 +990,20 @@ footer {
             <td class="tnum tpct">0.013%</td>
             <td class="tnote">~1 FTE — patient letter 17 Apr, signed Klinkers &amp; Govaert</td>
           </tr>
+          <tr>
+            <td class="tname">Adelante (revalidatie)</td>
+            <td class="ttype">Revalidatie</td>
+            <td class="tcity">Hoensbroek / Valkenburg</td>
+            <td class="tnum">15,000</td>
+            <td class="tnum tpct">0.084%</td>
+            <td class="tnote">Own statement 16 Apr: possibly accessed — investigating (adelantegroep.nl)</td>
+          </tr>
         </tbody>
         <tfoot>
           <tr class="exp-total">
             <td colspan="3">Total &mdash; named confirmed institutions</td>
-            <td class="tnum"><strong>203,250</strong></td>
-            <td class="tnum"><strong>1.14%</strong></td>
+            <td class="tnum"><strong>218,250</strong></td>
+            <td class="tnum"><strong>1.22%</strong></td>
             <td></td>
           </tr>
           <tr class="exp-note">
@@ -1099,6 +1107,10 @@ footer {
         <a class="src-item" href="https://basaltrevalidatie.nl/nieuws/informatie-over-hack-bij-chipsoft/" target="_blank" rel="noopener">
           <span class="src-name">Basalt revalidatie — information about ChipSoft hack</span>
           <span class="src-url">basaltrevalidatie.nl</span>
+        </a>
+        <a class="src-item" href="https://www.adelantegroep.nl/nieuws/2026/04-2026/datalek-bij-leverancier-chipsoft-raakt-deel-van-pati%C3%ABntgegevens-adelante" target="_blank" rel="noopener">
+          <span class="src-name">Adelante — data breach at ChipSoft affects part of patient data</span>
+          <span class="src-url">adelantegroep.nl</span>
         </a>
         <a class="src-item" href="https://dtvnieuws.nl/nieuws/artikel/ook-gegevens-van-huisartsenorganisatie-fonkelzorg-gestolen-bij-cyberaanval" target="_blank" rel="noopener">
           <span class="src-name">DTV Nieuws — Fonkelzorg patient data stolen in ChipSoft hack</span>
@@ -1253,7 +1265,8 @@ const hospitals = [
   {id:"ADRZ",name:"ADRZ",full:"Admiraal De Ruyter Ziekenhuis",city:"Goes / Vlissingen",pop:180000,catchment:"Zeeland",x:19.653,y:73.064,r:4.529,status:"CLEAR",htype:"HOSPITAL",note:"Confirmed not affected",isGP:false,isCluster:false},
   {id:"Zorgsaam",name:"Zorgsaam",full:"Zorgsaam Zorggroep",city:"Terneuzen",pop:120000,catchment:"Zeeuws-Vlaanderen",x:18.301,y:79.037,r:3.698,status:"CLEAR",htype:"HOSPITAL",note:"Confirmed not affected",isGP:false,isCluster:false},
   {id:"ADRZ",name:"ADRZ",full:"ADRZ",city:"Goes / Vlissingen",pop:180000,catchment:"Zeeland",x:19.768,y:73.203,r:4.529,status:"CLEAR",htype:"HOSPITAL",note:"Confirmed not affected",isGP:false,isCluster:false},
-  {id:"Zorgsaam",name:"Zorgsaam",full:"Zorgsaam ZVL",city:"Terneuzen",pop:110000,catchment:"Zeeuws-Vlaanderen",x:18.301,y:79.037,r:3.54,status:"CLEAR",htype:"HOSPITAL",note:"Confirmed not affected",isGP:false,isCluster:false}
+  {id:"Zorgsaam",name:"Zorgsaam",full:"Zorgsaam ZVL",city:"Terneuzen",pop:110000,catchment:"Zeeuws-Vlaanderen",x:18.301,y:79.037,r:3.54,status:"CLEAR",htype:"HOSPITAL",note:"Confirmed not affected",isGP:false,isCluster:false},
+  {id:"Adelante",name:"Adelante",full:"Adelante (revalidatie)",city:"Hoensbroek / Valkenburg",pop:15000,catchment:"Zuid-Limburg",x:66.282,y:93.239,r:1.307,status:"HIT",htype:"REHAB",note:"Own statement 16 Apr: possibly accessed by criminals — investigating",isGP:false,isCluster:false}
 ];
 
 const TYPE_LABELS = {
