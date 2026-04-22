@@ -721,8 +721,8 @@ footer {
     <div class="stats">
     <div class="stat">
       <div class="stat-label">Named institutions hit</div>
-      <div class="stat-value red">14+</div>
-      <div class="stat-sub">confirmed publicly</div>
+      <div class="stat-value red">15+</div>
+      <div class="stat-sub">confirmed, named</div>
     </div>
     <div class="stat">
       <div class="stat-label">Est. patients at risk</div>
@@ -731,7 +731,7 @@ footer {
     </div>
     <div class="stat">
       <div class="stat-label">% of NL population</div>
-      <div class="stat-value red">~1%</div>
+      <div class="stat-value red">~1.2%</div>
       <div class="stat-sub">named confirmed only</div>
     </div>
     <div class="stat">
@@ -746,7 +746,7 @@ footer {
     </div>
     <div class="stat">
       <div class="stat-label">Confirmed clear</div>
-      <div class="stat-value green">20</div>
+      <div class="stat-value green">25</div>
       <div class="stat-sub">not affected</div>
     </div>
   </div>
@@ -1188,6 +1188,18 @@ footer {
           <span class="src-name">Bernhoven Ziekenhuis — data incident at ChipSoft</span>
           <span class="src-url">bernhoven.nl</span>
         </a>
+        <a class="src-item" href="https://www.haaglandenmc.nl/nieuws/chipsoft-geraakt-door-data-incident-gevolgen-voor-hmc/" target="_blank" rel="noopener">
+          <span class="src-name">Haaglanden MC — ChipSoft data incident, consequences for HMC</span>
+          <span class="src-url">haaglandenmc.nl</span>
+        </a>
+        <a class="src-item" href="https://www.laurentiusziekenhuisroermond.nl/over-laurentius/actueel" target="_blank" rel="noopener">
+          <span class="src-name">Laurentius Ziekenhuis Roermond — actueel / ChipSoft statement</span>
+          <span class="src-url">laurentiusziekenhuisroermond.nl</span>
+        </a>
+        <a class="src-item" href="https://www.wza.nl/actueel/nieuws/cyberincident-bij-chipsoft" target="_blank" rel="noopener">
+          <span class="src-name">Wilhelmina Ziekenhuis Assen — cyber incident at ChipSoft</span>
+          <span class="src-url">wza.nl</span>
+        </a>
         <a class="src-item" href="https://www.slingeland.nl/ransomware-aanval-chipsoft-slingeland-niet-getroffen" target="_blank" rel="noopener">
           <span class="src-name">Slingeland Ziekenhuis — not affected by ChipSoft ransomware</span>
           <span class="src-url">slingeland.nl</span>
@@ -1312,7 +1324,7 @@ const hospitals = [
   {id:"LUMC",name:"LUMC",full:"Leids Universitair MC",city:"Leiden",pop:350000,catchment:"Leiden + regio",x:33.11,y:50.173,r:6.315,status:"CLEAR",htype:"HOSPITAL",note:"Confirmed not affected — own statement (lumc.nl)",isGP:false,isCluster:false},
   {id:"HMC",name:"HMC",full:"Haaglanden MC",city:"Den Haag",pop:380000,catchment:"Den Haag / Haaglanden",x:29.029,y:53.399,r:6.58,status:"CLEAR",htype:"HOSPITAL",note:"Confirmed not affected — own statement (haaglandenmc.nl)",isGP:false,isCluster:false},
   {id:"WZA",name:"WZA",full:"Wilhelmina Ziekenhuis Assen",city:"Assen",pop:130000,catchment:"Drenthe",x:80.702,y:20.658,r:3.849,status:"CLEAR",htype:"HOSPITAL",note:"Confirmed not affected — own statement (wza.nl)",isGP:false,isCluster:false},
-  {id:"Laurentius",name:"Laurentius",full:"Laurentius Ziekenhuis",city:"Roermond",pop:120000,catchment:"Midden-Limburg",x:67.658,y:83.991,r:3.698,status:"CLEAR",htype:"HOSPITAL",note:"Confirmed not affected — geen patiëntgegevens gestolen (laurentiusziekenhuisroermond.nl)",isGP:false,isCluster:false},
+  {id:"Laurentius",name:"Laurentius",full:"Laurentius Ziekenhuis",city:"Roermond",pop:120000,catchment:"Midden-Limburg",x:67.658,y:83.991,r:3.698,status:"CLEAR",htype:"HOSPITAL",note:"Confirmed not affected — own statement (laurentiusziekenhuisroermond.nl)",isGP:false,isCluster:false},
   {id:"SJG Weert",name:"SJG Weert",full:"SJG Weert",city:"Weert",pop:120000,catchment:"Midden-Limburg",x:61.33,y:81.895,r:3.698,status:"CLEAR",htype:"HOSPITAL",note:"Confirmed not affected — own statement (sjgweert.nl)",isGP:false,isCluster:false},
   {id:"Slingeland",name:"Slingeland",full:"Slingeland Ziekenhuis",city:"Doetinchem",pop:150000,catchment:"Achterhoek",x:74.81,y:57.352,r:4.134,status:"CLEAR",htype:"HOSPITAL",note:"Confirmed not affected — own statement (slingeland.nl)",isGP:false,isCluster:false},
   {id:"JBZ",name:"JBZ",full:"Jeroen Bosch Ziekenhuis",city:"Den Bosch",pop:280000,catchment:"Noordoost-Brabant",x:52.229,y:66.756,r:5.649,status:"CLEAR",htype:"HOSPITAL",note:"Confirmed not affected — own statement (jeroenboschziekenhuis.nl)",isGP:false,isCluster:false},
