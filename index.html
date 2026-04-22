@@ -726,7 +726,7 @@ footer {
     </div>
     <div class="stat">
       <div class="stat-label">Est. patients at risk</div>
-      <div class="stat-value red">~218k</div>
+      <div class="stat-value red">~225k</div>
       <div class="stat-sub">named institutions only</div>
     </div>
     <div class="stat">
@@ -741,12 +741,12 @@ footer {
     </div>
     <div class="stat">
       <div class="stat-label">Awaiting communication</div>
-      <div class="stat-value amber">1</div>
-      <div class="stat-sub">BovenIJ Ziekenhuis</div>
+      <div class="stat-value amber">2</div>
+      <div class="stat-sub">BovenIJ + Meditta</div>
     </div>
     <div class="stat">
       <div class="stat-label">Confirmed clear</div>
-      <div class="stat-value green">25</div>
+      <div class="stat-value green">26</div>
       <div class="stat-sub">not affected</div>
     </div>
   </div>
@@ -998,12 +998,20 @@ footer {
             <td class="tnum tpct">0.084%</td>
             <td class="tnote">Own statement 16 Apr: possibly accessed — investigating (adelantegroep.nl)</td>
           </tr>
+          <tr>
+            <td class="tname">Huisartsenpunt</td>
+            <td class="ttype">GP organisation</td>
+            <td class="tcity">Grathem / Heel / Ittervoort / Vlodrop</td>
+            <td class="tnum">7,050</td>
+            <td class="tnum tpct">0.039%</td>
+            <td class="tnote">~3 FTE est. — own statement confirmed stolen (L1 Nieuws)</td>
+          </tr>
         </tbody>
         <tfoot>
           <tr class="exp-total">
             <td colspan="3">Total &mdash; named confirmed institutions</td>
-            <td class="tnum"><strong>218,250</strong></td>
-            <td class="tnum"><strong>1.22%</strong></td>
+            <td class="tnum"><strong>225,300</strong></td>
+            <td class="tnum"><strong>1.26%</strong></td>
             <td></td>
           </tr>
           <tr class="exp-note">
@@ -1328,7 +1336,10 @@ const hospitals = [
   {id:"SJG Weert",name:"SJG Weert",full:"SJG Weert",city:"Weert",pop:120000,catchment:"Midden-Limburg",x:61.33,y:81.895,r:3.698,status:"CLEAR",htype:"HOSPITAL",note:"Confirmed not affected — own statement (sjgweert.nl)",isGP:false,isCluster:false},
   {id:"Slingeland",name:"Slingeland",full:"Slingeland Ziekenhuis",city:"Doetinchem",pop:150000,catchment:"Achterhoek",x:74.81,y:57.352,r:4.134,status:"CLEAR",htype:"HOSPITAL",note:"Confirmed not affected — own statement (slingeland.nl)",isGP:false,isCluster:false},
   {id:"JBZ",name:"JBZ",full:"Jeroen Bosch Ziekenhuis",city:"Den Bosch",pop:280000,catchment:"Noordoost-Brabant",x:52.229,y:66.756,r:5.649,status:"CLEAR",htype:"HOSPITAL",note:"Confirmed not affected — own statement (jeroenboschziekenhuis.nl)",isGP:false,isCluster:false},
-  {id:"ErasmusMC",name:"ErasmusMC",full:"Erasmus MC",city:"Rotterdam",pop:500000,catchment:"Rotterdam + regio",x:32.927,y:59.097,r:7.548,status:"CLEAR",htype:"HOSPITAL",note:"Confirmed not affected — own statement (erasmusmc.nl)",isGP:false,isCluster:false}
+  {id:"ErasmusMC",name:"ErasmusMC",full:"Erasmus MC",city:"Rotterdam",pop:500000,catchment:"Rotterdam + regio",x:32.927,y:59.097,r:7.548,status:"CLEAR",htype:"HOSPITAL",note:"Confirmed not affected — own statement (erasmusmc.nl)",isGP:false,isCluster:false},
+  {id:"Huisartsenpunt",name:"Huisartsenpunt",full:"Huisartsenpunt (huisartsen)",city:"Grathem / Heel / Ittervoort / Vlodrop",pop:7050,catchment:"Midden-Limburg",x:65.526,y:84.541,r:0.896,status:"HIT",htype:"GP",note:"Confirmed: data stolen — own statement on website (L1 Nieuws)",isGP:true,isCluster:false},
+  {id:"Zuyderland",name:"Zuyderland",full:"Zuyderland Medisch Centrum",city:"Heerlen / Sittard",pop:380000,catchment:"Zuid-Limburg",x:67.543,y:94.332,r:6.58,status:"CLEAR",htype:"HOSPITAL",note:"Confirmed not affected — own statement via L1 Nieuws",isGP:false,isCluster:false},
+  {id:"Meditta",name:"Meditta",full:"Meditta (huisartsen)",city:"Roermond / Weert / Sittard",pop:50000,catchment:"Midden-Limburg",x:67.36,y:83.682,r:2.387,status:"AWAITING",htype:"GP",note:"Informed by ChipSoft — investigation ongoing, outcome unclear (L1 Nieuws)",isGP:true,isCluster:false}
 ];
 
 const TYPE_LABELS = {
