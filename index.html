@@ -708,7 +708,7 @@ footer {
     <div class="hmeta">
       <div class="hincident">
         <strong>Incident CS-2026-0412</strong> &nbsp;&middot;&nbsp;
-        Detected 7 Apr 2026 &nbsp;&middot;&nbsp; Last updated 20 Apr 2026
+        Detected 7 Apr 2026 &nbsp;&middot;&nbsp; Last updated 22 Apr 2026
       </div>
     </div>
   </div>
@@ -726,7 +726,7 @@ footer {
     </div>
     <div class="stat">
       <div class="stat-label">Est. patients at risk</div>
-      <div class="stat-value red">~225k</div>
+      <div class="stat-value red">~234k</div>
       <div class="stat-sub">named institutions only</div>
     </div>
     <div class="stat">
@@ -1002,16 +1002,16 @@ footer {
             <td class="tname">Huisartsenpunt</td>
             <td class="ttype">GP organisation</td>
             <td class="tcity">Grathem / Heel / Ittervoort / Vlodrop</td>
-            <td class="tnum">7,050</td>
+            <td class="tnum">16,450</td>
             <td class="tnum tpct">0.039%</td>
-            <td class="tnote">~3 FTE est. — own statement confirmed stolen (L1 Nieuws)</td>
+            <td class="tnote">7 locations (Dierdonk, Grathem, Heel x2, Ittervoort, Vlodrop, Weert) — own statement 17 Apr</td>
           </tr>
         </tbody>
         <tfoot>
           <tr class="exp-total">
             <td colspan="3">Total &mdash; named confirmed institutions</td>
-            <td class="tnum"><strong>225,300</strong></td>
-            <td class="tnum"><strong>1.26%</strong></td>
+            <td class="tnum"><strong>234,700</strong></td>
+            <td class="tnum"><strong>1.31%</strong></td>
             <td></td>
           </tr>
           <tr class="exp-note">
@@ -1045,14 +1045,14 @@ footer {
     </div>
     <div class="ctx-block">
       <div class="ctx-label">Sources &amp; status</div>
-      <div class="ctx-text">Status based on institution websites, NOS, Volkskrant, ANP, LHV, L1 Nieuws, and Skipr as of 20 Apr 2026. GP addresses geocoded via Google Places. BovenIJ remains silent with portal offline. Forensic investigation by ChipSoft and Z-CERT ongoing. Independent awareness project — not an official communication.</div>
+      <div class="ctx-text">Status based on institution websites, NOS, Volkskrant, ANP, LHV, L1 Nieuws, and Skipr as of 22 Apr 2026. GP addresses geocoded via Google Places. BovenIJ remains silent with portal offline. Forensic investigation by ChipSoft and Z-CERT ongoing. Independent awareness project — not an official communication.</div>
     </div>
   </div>
 
   <!-- Accuracy note -->
   <div class="callout amber" style="margin-top:1.25rem">
     <div style="flex:1">
-      <div class="callout-label" style="color:var(--amber)">Disclaimer &mdash; 20 Apr 2026</div>
+      <div class="callout-label" style="color:var(--amber)">Disclaimer &mdash; 22 Apr 2026</div>
       <div class="callout-text">This page aggregates <strong>publicly available information</strong> from institution websites, official press releases, and media reporting. It does not make claims beyond what sources state. Named GP practices are plotted at geocoded addresses with a ~2,300 patient radius (Dutch average). GP practices are plotted only where a breach is confirmed or suspected. Population figures are estimates. This is an independent public-awareness project — not affiliated with ChipSoft, Z-CERT, or any healthcare institution. For official information, consult <strong>informatie.chipsoft.com</strong> and your own healthcare provider.</div>
     </div>
   </div>
@@ -1062,7 +1062,7 @@ footer {
   <div class="card" style="margin-top:1.25rem">
     <div class="card-head">
       <span class="card-head-title">Sources</span>
-      <span class="card-head-meta">all publicly available — last verified 20 Apr 2026</span>
+      <span class="card-head-meta">all publicly available — last verified 22 Apr 2026</span>
     </div>
     <div class="src-body">
 
@@ -1269,7 +1269,7 @@ footer {
 
 <footer>
   <span class="footer-brand">EPD<em>fail</em> &mdash; mapping healthcare data breaches in the Netherlands</span>
-  <span>Independent awareness project &nbsp;&middot;&nbsp; not an official communication &nbsp;&middot;&nbsp; 20 Apr 2026</span>
+  <span>Independent awareness project &nbsp;&middot;&nbsp; not an official communication &nbsp;&middot;&nbsp; 22 Apr 2026</span>
 </footer>
 
 <script>
@@ -1337,7 +1337,7 @@ const hospitals = [
   {id:"Slingeland",name:"Slingeland",full:"Slingeland Ziekenhuis",city:"Doetinchem",pop:150000,catchment:"Achterhoek",x:74.81,y:57.352,r:4.134,status:"CLEAR",htype:"HOSPITAL",note:"Confirmed not affected — own statement (slingeland.nl)",isGP:false,isCluster:false},
   {id:"JBZ",name:"JBZ",full:"Jeroen Bosch Ziekenhuis",city:"Den Bosch",pop:280000,catchment:"Noordoost-Brabant",x:52.229,y:66.756,r:5.649,status:"CLEAR",htype:"HOSPITAL",note:"Confirmed not affected — own statement (jeroenboschziekenhuis.nl)",isGP:false,isCluster:false},
   {id:"ErasmusMC",name:"ErasmusMC",full:"Erasmus MC",city:"Rotterdam",pop:500000,catchment:"Rotterdam + regio",x:32.927,y:59.097,r:7.548,status:"CLEAR",htype:"HOSPITAL",note:"Confirmed not affected — own statement (erasmusmc.nl)",isGP:false,isCluster:false},
-  {id:"Huisartsenpunt",name:"Huisartsenpunt",full:"Huisartsenpunt (huisartsen)",city:"Grathem / Heel / Ittervoort / Vlodrop",pop:7050,catchment:"Midden-Limburg",x:65.526,y:84.541,r:0.896,status:"HIT",htype:"GP",note:"Confirmed: data stolen — own statement on website (L1 Nieuws)",isGP:true,isCluster:false},
+  {id:"Huisartsenpunt",name:"Huisartsenpunt",full:"Huisartsenpunt (huisartsen)",city:"Grathem / Heel / Ittervoort / Vlodrop",pop:16450,catchment:"Midden-Limburg",x:65.526,y:84.541,r:1.369,status:"HIT",htype:"GP",note:"Confirmed: data stolen — own statement 17 Apr (huisartsenpunt.nl)",isGP:true,isCluster:false},
   {id:"Zuyderland",name:"Zuyderland",full:"Zuyderland Medisch Centrum",city:"Heerlen / Sittard",pop:380000,catchment:"Zuid-Limburg",x:67.543,y:94.332,r:6.58,status:"CLEAR",htype:"HOSPITAL",note:"Confirmed not affected — own statement via L1 Nieuws",isGP:false,isCluster:false},
   {id:"Meditta",name:"Meditta",full:"Meditta (huisartsen)",city:"Roermond / Weert / Sittard",pop:50000,catchment:"Midden-Limburg",x:67.36,y:83.682,r:2.387,status:"AWAITING",htype:"GP",note:"Informed by ChipSoft — investigation ongoing, outcome unclear (L1 Nieuws)",isGP:true,isCluster:false}
 ];
