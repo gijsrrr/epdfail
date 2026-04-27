@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiBmaWxsPSIjZmZmZmZmIiByeD0iNCIvPjx0ZXh0IHg9IjIiIHk9IjE0IiBmb250LWZhbWlseT0ibW9ub3NwYWNlIiBmb250LXNpemU9IjkiIGZvbnQtd2VpZ2h0PSI2MDAiIGZpbGw9IiMxYTE5MTgiPkVQRDwvdGV4dD48dGV4dCB4PSIyIiB5PSIyNiIgZm9udC1mYW1pbHk9Ikdlb3JnaWEsc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZvbnQtc3R5bGU9Iml0YWxpYyIgZmlsbD0iI2M0MmIyYiI+ZmFpbDwvdGV4dD48L3N2Zz4=">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EPDfail — Your Rights as a Patient</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:       #f5f4f2;
+  --surface:  #ffffff;
+  --surface2: #f0efed;
+  --border:   rgba(0,0,0,0.08);
+  --border2:  rgba(0,0,0,0.14);
+  --red:      #c42b2b;
+  --red-bg:   rgba(196,43,43,0.07);
+  --amber:    #9a6200;
+  --amber-bg: rgba(154,98,0,0.08);
+  --green:    #1a6b35;
+  --green-bg: rgba(26,107,53,0.08);
+  --text:     #1a1918;
+  --muted:    #6b6662;
+  --faint:    #b0aca8;
+  --mono:     'DM Mono', monospace;
+  --serif:    'Instrument Serif', serif;
+  --sans:     'Inter', sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+
+.header-inner {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.logo { display: flex; align-items: center; gap: 6px; text-decoration: none; }
+.logo-epd { font-family: var(--mono); font-size: 24px; font-weight: 500; color: var(--text); line-height: 1; }
+.logo-fail { font-family: var(--serif); font-size: 24px; font-style: italic; color: var(--red); line-height: 1; }
+
+.hdivider { width: 1px; height: 32px; background: var(--border2); flex-shrink: 0; }
+
+.hback {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--muted);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.hback:hover { color: var(--text); }
+
+main {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 2.5rem 2rem 4rem;
+}
+
+.page-title {
+  font-family: var(--serif);
+  font-size: 2rem;
+  font-style: italic;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.page-sub {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: var(--faint);
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.intro {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--green);
+  border-radius: 0 8px 8px 0;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2rem;
+  font-size: 15px;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.intro strong { color: var(--text); }
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.card-head {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.card-head-title {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--faint);
+}
+
+.card-head-label {
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-body p {
+  font-size: 15px;
+  color: var(--muted);
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+
+.card-body p:last-child { margin-bottom: 0; }
+.card-body strong { color: var(--text); font-weight: 500; }
+
+.right-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 600px) { .right-grid { grid-template-columns: 1fr; } }
+
+.right-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+}
+
+.right-item-icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.right-item-title {
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--text);
+  margin-bottom: 0.4rem;
+}
+
+.right-item-desc {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.steps {
+  counter-reset: step;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.step {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+
+.step-num {
+  counter-increment: step;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--red-bg);
+  color: var(--red);
+  font-family: var(--mono);
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+}
+
+.step-content { flex: 1; }
+.step-title { font-weight: 500; font-size: 15px; color: var(--text); margin-bottom: 0.25rem; }
+.step-desc { font-size: 14px; color: var(--muted); line-height: 1.65; }
+
+.template-box {
+  background: var(--surface2);
+  border: 1px solid var(--border2);
+  border-radius: 6px;
+  padding: 1.5rem;
+  font-family: var(--mono);
+  font-size: 13px;
+  line-height: 1.8;
+  color: var(--text);
+  white-space: pre-wrap;
+  position: relative;
+}
+
+.template-label {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--faint);
+  margin-bottom: 0.75rem;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: var(--surface);
+  border: 1px solid var(--border2);
+  border-radius: 4px;
+  padding: 4px 10px;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--muted);
+  cursor: pointer;
+  transition: all .15s;
+}
+.copy-btn:hover { background: var(--red-bg); color: var(--red); border-color: var(--red); }
+
+.timeline-note {
+  background: var(--amber-bg);
+  border: 1px solid rgba(154,98,0,0.2);
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+  font-size: 14px;
+  color: var(--amber);
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.timeline-note strong { color: var(--amber); }
+
+.disclaimer {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--faint);
+  border-top: 1px solid var(--border);
+  padding-top: 1.5rem;
+  margin-top: 2.5rem;
+  line-height: 1.7;
+}
+
+.disclaimer a { color: var(--faint); text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="logo" href="index.html">
+      <span class="logo-epd">EPD</span><span class="logo-fail">fail</span>
+    </a>
+    <div class="hdivider"></div>
+    <a class="hback" href="index.html">← Back to breach map</a>
+  </div>
+</header>
+
+<main>
+
+  <p class="page-sub">Patient rights · GDPR / AVG · April 2026</p>
+  <h1 class="page-title">What does your doctor know about you — and what are your rights?</h1>
+
+  <div class="intro">
+    Following the ChipSoft incident, many people are asking: <strong>what data was in my record, and can I find out?</strong> This page explains what healthcare providers store, what your rights are under the GDPR, and how to exercise them. You do not need a lawyer, and it costs nothing.
+  </div>
+
+  <!-- What's in your EPD -->
+  <div class="card">
+    <div class="card-head">
+      <span class="card-head-title">Background</span>
+      <span class="card-head-label">What does a healthcare provider store about you?</span>
+    </div>
+    <div class="card-body">
+      <p>An Electronic Patient Record (EPD) typically contains your personal details (name, address, date of birth, BSN), your medical history, diagnoses, prescribed medications, lab results, referral letters, and notes from consultations. For specialist institutions it can also include treatment plans, imaging results, and correspondence between providers.</p>
+      <p>In the case of forensic psychiatric institutions such as De Waag and Van der Hoeven Kliniek, records may additionally include court orders, risk assessments, and TBS-related documentation — the most sensitive category of medical data under Dutch law.</p>
+      <p>Under the GDPR, medical data is classified as a <strong>special category of personal data</strong> and receives the highest level of protection. Institutions are legally required to inform you if your data has been involved in a breach.</p>
+    </div>
+  </div>
+
+  <!-- Your rights -->
+  <div class="card">
+    <div class="card-head">
+      <span class="card-head-title">GDPR / AVG — Article 15</span>
+      <span class="card-head-label">Your four core rights</span>
+    </div>
+    <div class="card-body" style="padding-bottom:0.5rem">
+    </div>
+  </div>
+
+  <div class="right-grid">
+    <div class="right-item">
+      <div class="right-item-icon">🔍</div>
+      <div class="right-item-title">Right of access</div>
+      <div class="right-item-desc">You can request a full copy of all data an institution holds about you. They must respond within one month, free of charge.</div>
+    </div>
+    <div class="right-item">
+      <div class="right-item-icon">✏️</div>
+      <div class="right-item-title">Right to rectification</div>
+      <div class="right-item-desc">If data about you is incorrect or incomplete, you can request a correction. The institution must act without undue delay.</div>
+    </div>
+    <div class="right-item">
+      <div class="right-item-icon">🗑️</div>
+      <div class="right-item-title">Right to erasure</div>
+      <div class="right-item-desc">In certain circumstances you can request deletion of your data. Note: healthcare providers may have a legal retention obligation (15 years for medical records under Dutch law).</div>
+    </div>
+    <div class="right-item">
+      <div class="right-item-icon">📋</div>
+      <div class="right-item-title">Right to be informed</div>
+      <div class="right-item-desc">If your data was involved in a breach, the institution is legally required to notify you. ChipSoft-related institutions are in the process of doing so.</div>
+    </div>
+  </div>
+
+  <!-- How to submit -->
+  <div class="card">
+    <div class="card-head">
+      <span class="card-head-title">Step by step</span>
+      <span class="card-head-label">How to submit an access request</span>
+    </div>
+    <div class="card-body">
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <div class="step-title">Identify the right institution</div>
+            <div class="step-desc">Contact each institution separately — your GP, any specialist clinics, and any hospital you have visited. Each holds its own records.</div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <div class="step-title">Send a written request</div>
+            <div class="step-desc">Send an email or letter to the institution's privacy officer or data protection officer (DPO). Most institutions publish a dedicated privacy contact on their website. You can use the template below.</div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <div class="step-title">Verify your identity</div>
+            <div class="step-desc">The institution may ask you to confirm your identity — this is normal and required to protect your privacy. This can usually be done digitally via DigiD or by providing a copy of your ID with BSN redacted.</div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <div class="step-content">
+            <div class="step-title">Wait for a response</div>
+            <div class="step-desc">The institution must respond within <strong>one month</strong>. In complex cases they may extend this by two additional months, but must notify you within the first month.</div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">5</div>
+          <div class="step-content">
+            <div class="step-title">No response? File a complaint</div>
+            <div class="step-desc">If the institution does not respond within the deadline, you can file a complaint with the <strong>Autoriteit Persoonsgegevens</strong> at <a href="https://www.autoriteitpersoonsgegevens.nl" target="_blank" rel="noopener">autoriteitpersoonsgegevens.nl</a>.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Template -->
+  <div class="card">
+    <div class="card-head">
+      <span class="card-head-title">Template</span>
+      <span class="card-head-label">Request letter — ready to use</span>
+    </div>
+    <div class="card-body">
+      <div class="template-label">Copy, fill in the highlighted fields, and send by email to the institution's privacy contact</div>
+      <div class="template-box" id="template-text">Subject: Request for access to personal data — Article 15 GDPR
+
+Dear Sir/Madam,
+
+I am writing to exercise my right of access under Article 15 of the General Data Protection Regulation (GDPR).
+
+I request a complete overview of all personal data you hold about me, including:
+- The categories of data processed
+- The purposes for which my data is processed
+- Any third parties with whom my data has been shared
+- The retention period for my data
+
+In light of the recent cyber incident at ChipSoft (April 2026), I would also like to know whether my personal data was affected by this incident, and if so, what specific data was involved.
+
+My details:
+Full name: [YOUR NAME]
+Date of birth: [DD/MM/YYYY]
+BSN: [YOUR BSN — only if required for identification]
+
+Please respond within one month as required under Article 12 GDPR.
+
+Kind regards,
+[YOUR NAME]
+[YOUR EMAIL / ADDRESS]
+      </div>
+      <button class="copy-btn" onclick="copyTemplate()">Copy</button>
+
+      <div class="timeline-note">
+        <span>⏱</span>
+        <span><strong>Timing note:</strong> Given the volume of requests institutions may currently receive following this incident, responses may come closer to the one-month deadline than usual. This is normal — the legal obligation remains.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- AP complaint -->
+  <div class="card">
+    <div class="card-head">
+      <span class="card-head-title">Escalation</span>
+      <span class="card-head-label">Filing a complaint with the AP</span>
+    </div>
+    <div class="card-body">
+      <p>If your institution fails to respond, or if you believe your data has been mishandled, you can file a complaint with the <strong>Autoriteit Persoonsgegevens (AP)</strong> — the Dutch data protection authority.</p>
+      <p>The AP has already received <strong>66+ breach notifications</strong> related to the ChipSoft incident. Complaints can be filed at <a href="https://www.autoriteitpersoonsgegevens.nl/klacht-indienen" target="_blank" rel="noopener" style="color:var(--red)">autoriteitpersoonsgegevens.nl/klacht-indienen</a>.</p>
+    </div>
+  </div>
+
+  <div class="disclaimer">
+    This page is for informational purposes only. It does not constitute legal advice. If you have specific legal concerns, consult a qualified legal professional. Based on public sources. Personal project — not an official communication. &nbsp;&middot;&nbsp; <a href="index.html">Back to EPDfail breach map</a> &nbsp;&middot;&nbsp; Official ChipSoft information: <a href="https://informatie.chipsoft.com" target="_blank" rel="noopener">informatie.chipsoft.com</a>
+  </div>
+
+</main>
+
+<script>
+function copyTemplate() {
+  const text = document.getElementById('template-text').innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    const btn = document.querySelector('.copy-btn');
+    btn.textContent = 'Copied!';
+    setTimeout(() => btn.textContent = 'Copy', 2000);
+  });
+}
+</script>
+
+<script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>
